@@ -12,9 +12,13 @@ require.config({
     'VideoPlayer': '../shared/js/media/video_player',
     'MediaFrame': '../shared/js/media/media_frame',
     'BlobView': '../shared/js/blobview',
-    'debug': 'vendor/debug'
+    'BatteryHelper':'../shared/js/battery',
+    'debug': 'debug'
   },
   shim: {
+    'BatteryHelper':{
+       exports: 'BatteryHelper'
+    },
     'format': {
       exports: 'Format'
     },

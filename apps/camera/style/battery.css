@@ -1,0 +1,160 @@
+.batteryStatus{
+
+z-index: 70;
+position:absolute;
+/*top:7.5rem;
+left:2rem;*/
+bottom:6%;
+right:0;
+background-size: 2rem;
+background-repeat: no-repeat;
+margin:0;
+padding: 0;
+width: 3rem;
+height:3rem;
+}
+
+.batteryStatus[data-value="0"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_22.png);
+}
+.batteryStatus[data-value="0"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_01.png);
+}
+.batteryStatus[data-value="1"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_23.png);
+}
+.batteryStatus[data-value="1"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_02.png);
+}
+.batteryStatus[data-value="2"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_24.png);
+}
+.batteryStatus[data-value="2"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_03.png);
+}
+
+.batteryStatus[data-value="3"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_25.png);
+}
+.batteryStatus[data-value="3"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_04.png);
+}
+
+.batteryStatus[data-value="4"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_26.png);
+}
+.batteryStatus[data-value="4"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_05.png);
+}
+
+.batteryStatus[data-value="5"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_27.png);
+}
+.batteryStatus[data-value="5"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_06.png);
+}
+
+.batteryStatus[data-value="6"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_28.png);
+}
+.batteryStatus[data-value="6"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_07.png);
+}
+
+.batteryStatus[data-value="7"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_29.png);
+}
+.batteryStatus[data-value="7"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_08.png);
+}
+
+.batteryStatus[data-value="8"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_30.png);
+}
+.batteryStatus[data-value="8"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_09.png);
+}
+
+.batteryStatus[data-value="9"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_31.png);
+}
+.batteryStatus[data-value="9"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_10.png);
+}
+
+.batteryStatus[data-value="10"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_32.png);
+}
+.batteryStatus[data-value="10"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_11.png);
+}
+
+.batteryStatus[data-value="11"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_33.png);
+}
+.batteryStatus[data-value="11"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_12.png);
+}
+
+.batteryStatus[data-value="12"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_34.png);
+}
+.batteryStatus[data-value="12"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_13.png);
+}
+
+.batteryStatus[data-value="13"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_35.png);
+}
+.batteryStatus[data-value="13"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_14.png);
+}
+
+.batteryStatus[data-value="14"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_36.png);
+}
+.batteryStatus[data-value="14"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_15.png);
+}
+
+.batteryStatus[data-value="15"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_37.png);
+}
+.batteryStatus[data-value="15"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_16.png);
+}
+
+.batteryStatus[data-value="16"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_38.png);
+}
+.batteryStatus[data-value="16"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_17.png);
+}
+
+.batteryStatus[data-value="17"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_39.png);
+}
+.batteryStatus[data-value="17"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_18.png);
+}
+
+.batteryStatus[data-value="18"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_40.png);
+}
+.batteryStatus[data-value="18"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_19.png);
+}
+
+.batteryStatus[data-value="19"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_41.png);
+}
+.batteryStatus[data-value="19"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_20.png);
+}
+.batteryStatus[data-value="20"][data-mode=charging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_42.png);
+}
+.batteryStatus[data-value="20"][data-mode=notcharging]{
+	background-image: url(images/drawable-hdpi/cam_icon_line8_21.png);
+}
+

@@ -7,7 +7,7 @@ define(function(require, exports, module) {
 
 module.exports = {
   CAMERA_MODE_TYPE: {
-    PICTURE: 'picture',
+    PHOTO: 'photo',
     VIDEO: 'video'
   },
 
@@ -44,7 +44,11 @@ module.exports = {
 
   MIN_VIEWFINDER_SCALE: 1.0,
 
-  MAX_VIEWFINDER_SCALE: 4.0
+  MAX_VIEWFINDER_SCALE: 8.0,
+
+  ZOOM_LEVEL: 15,
+
+  DUAL_BUTTON: true
 };
 
 });

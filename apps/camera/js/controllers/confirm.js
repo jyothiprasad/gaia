@@ -7,18 +7,19 @@ define(function(require, exports, module) {
  * Module Dependencies
  */
 
-var prepareBlob = require('lib/prepare-preview-blob');
+var prepareBlob = require('utils/prepare-preview-blob');
 var debug = require('debug')('controller:confirm');
-var resizeImage = require('lib/resize-image');
+var resizeImage = require('utils/resizeimage');
 var ConfirmView = require('views/confirm');
-var bindAll = require('lib/bind-all');
+var bindAll = require('utils/bindAll');
 
 /**
  * Exports
  */
 
-module.exports = function(options) { return new ConfirmController(options); };
-module.exports.ConfirmController = ConfirmController;
+module.exports = function(options) {
+  return new ConfirmController(options);
+};
 
 /**
  * Initialize a new `ConfirmController`
@@ -26,8 +27,8 @@ module.exports.ConfirmController = ConfirmController;
  * @param {Object} options
  */
 function ConfirmController(app) {
+  debug('initializing');
   this.activity = app.activity;
-  this.camera = app.camera;
   this.container = app.el;
   this.app = app;
 
@@ -41,26 +42,13 @@ function ConfirmController(app) {
   debug('initialized');
 }
 
-ConfirmController.prototype.renderView = function() {
-  if (this.confirmView) {
-    this.confirmView.show();
-    return;
-  }
-  this.confirmView = new this.ConfirmView();
-  this.confirmView.hide();
-  this.confirmView.render().appendTo(this.container);
-  this.confirmView.on('click:select', this.onSelectMedia);
-  this.confirmView.on('click:retake', this.confirmView.hide);
-  this.camera.resumePreview();
-};
-
 /**
  * Bind callbacks to required events.
  *
  */
 ConfirmController.prototype.bindEvents = function() {
-  this.app.on('newimage', this.onNewMedia);
-  this.app.on('newvideo', this.onNewMedia);
+  this.app.on('newimage', this.onNewImage);
+  this.app.on('newvideo', this.onNewVideo);
 };
 
 /**
@@ -68,50 +56,86 @@ ConfirmController.prototype.bindEvents = function() {
  * will present the user with a
  * confirm overlay where they can
  * decide to 'select' or 'retake'
- * the photo or video
+ * the photo.
  *
  * @param  {Object} data
  *
  */
-ConfirmController.prototype.onNewMedia = function(newMedia) {
+ConfirmController.prototype.onNewImage = function(data) {
   if (!this.activity.active) { return; }
 
-  this.newMedia = newMedia;
-  this.renderView();
-  if (newMedia.isVideo) { // Is video
-    this.confirmView.showVideo(newMedia);
-  } else { // Is Image
-    this.prepareBlob(this.newMedia.blob, this.confirmView.showImage);
+  var confirm = new this.ConfirmView();
+  var activity = this.activity;
+  var camera = this.camera;
+  var blob = data.blob;
+
+  confirm
+    .render()
+    .appendTo(this.container)
+    .setupMediaFrame()
+    .on('click:select', onSelectClick)
+    .on('click:retake', onRetakeClick);
+
+  this.prepareBlob(blob, confirm.showImage);
+
+  function onSelectClick() {
+    var width = activity.data.width;
+    var height = activity.data.height;
+    var needsResizing = width || height;
+
+    if (!needsResizing) {
+      post(blob);
+      return;
+    }
+
+    resizeImage({
+      blob: blob,
+      width: width,
+      height: height
+    }, post);
+  }
+
+  function onRetakeClick() {
+    confirm.destroy();
+    camera.resumePreview();
+  }
+
+  function post(blob) {
+    activity.postResult({
+      type: 'image/jpeg',
+      blob: blob
+    });
   }
 };
 
-ConfirmController.prototype.onSelectMedia = function() {
+ConfirmController.prototype.onNewVideo = function(video) {
+  if (!this.activity.active) { return; }
+
+  var ConfirmView = this.ConfirmView;
+  var confirm = new ConfirmView();
   var activity = this.activity;
-  var needsResizing;
-  var media = {
-    blob: this.newMedia.blob
-  };
+  var camera = this.camera;
 
-  if (this.newMedia.isVideo) { // Is Video
-    media.type = 'video/3gpp';
-    media.poster = this.newMedia.poster.blob;
-  } else { // Is Image
-    media.type = 'image/jpeg';
-    needsResizing = activity.data.width || activity.data.height;
-    if (needsResizing) {
-      resizeImage({
-        blob: this.newMedia.blob,
-        width: activity.data.width,
-        height: activity.data.height
-      }, function(newBlob) {
-        media.blob = newBlob;
-        activity.postResult(media);
-      });
-      return;
-    }
+  confirm
+    .render()
+    .appendTo(this.container)
+    .setupMediaFrame()
+    .showVideo(video)
+    .on('click:select', onSelectClick)
+    .on('click:retake', onRetakeClick);
+
+  function onSelectClick() {
+    activity.postResult({
+      type: 'video/3gpp',
+      blob: video.blob,
+      poster: video.poster.blob
+    });
   }
-  activity.postResult(media);
 
+  function onRetakeClick() {
+    camera.resumePreview();
+    confirm.destroy();
+  }
 };
 
 });

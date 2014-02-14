@@ -5,51 +5,88 @@ define(function(require, exports, module) {
  * Dependencies
  */
 
-var formatTimer = require('lib/format-timer');
-var debug = require('debug')('view:controls');
-var attach = require('vendor/attach');
 var View = require('vendor/view');
-var find = require('lib/find');
+var bind = require('utils/bind');
+var find = require('utils/find');
+var formatTimer = require('utils/formattimer');
+var debug = require('debug')('view:controls');
 
 /**
  * Exports
  */
 
 module.exports = View.extend({
-  name: 'controls',
-  className: 'test-controls',
-
+  className: 'controls js-controls',
+  buttonsDisabledClass: 'buttons-disabled',
   initialize: function() {
     this.render();
   },
 
   render: function() {
     this.el.innerHTML = this.template();
-    attach.on(this.el, 'click', '.js-switch', this.onSwitchClick);
-    attach.on(this.el, 'click', '.js-btn', this.onButtonClick);
+
+    // Find elements
+    this.els.switchButton = find('.js-switch', this.el);
+    this.els.captureButton = find('.js-capture', this.el);
+    this.els.galleryButton = find('.js-gallery', this.el);
+    this.els.thumbnailButton = find('.js-thumbnail', this.el);
+    this.els.cancelPickButton = find('.js-cancel-pick', this.el);
     this.els.timer = find('.js-video-timer', this.el);
-    debug('rendered');
+    this.els.videoButton = find('.js-video', this.el);
+
+    // Bind events
+    bind(this.els.switchButton, 'click', this.onButtonClick);
+    bind(this.els.captureButton, 'click', this.onButtonClick);
+    bind(this.els.galleryButton, 'click', this.onButtonClick);
+    bind(this.els.cancelPickButton, 'click', this.onButtonClick);
+    bind(this.els.videoButton, 'click', this.onButtonClick);
+  },
+
+  template: function() {
+    return '<a class="switch-button js-switch" name="switch">' +
+      '<span class="rotates"></span>' +
+    '</a>' +
+//    '<a class="video-button js-video" name="video">' +
+//      '<span class="rotates"></span>' +
+//    '</a>' +
+//    '<a class="capture-button js-capture" name="capture">' +
+//      '<span class="rotates"></span>' +
+//    '</a>' +
+    '<div class="picture-button js-capture rotates" name="capture">' +
+      '<div class="circle outer-circle"></div>' +
+      '<div class="circle middle-circle"></div>' +
+      '<div class="circle inner-circle"></div>' +
+      '<div class="center"></div>' +
+    '</div>' +
+    '<div class="record-button js-video" name="video">' +
+      '<div class="circle record-middle-circle"></div>' +
+      '<div class="circle record-inner-circle"></div>' +
+      '<div class="center"></div>' +
+    '</div>' +
+      '<div class="misc-button">' +
+      '<a class="gallery-button js-gallery" name="gallery">' +
+        '<span class="rotates"></span>' +
+      '</a>' +
+      '<a class="thumbnail-button js-thumbnail" name="thumbnail"></a>' +
+      '<a class="cancel-pick js-cancel-pick" name="cancel">' +
+        '<span></span>' +
+      '</a>' +
+      '<span class="video-timer js-video-timer">00:00</span>' +
+    '</div>';
   },
 
   set: function(key, value) {
-    this.el.setAttribute(key, value);
+    this.el.setAttribute('data-' + key, value);
   },
 
-  setter: function(key) {
-    return (function(value) { this.set(key, value); }).bind(this);
+  enableButtons: function() {
+    this.el.classList.remove(this.buttonsDisabledClass);
+    debug('buttons enabled');
   },
 
-  enable: function(key, value) {
-    value = arguments.length === 2 ? value : true;
-    this.set(key + '-enabled', value);
-  },
-
-  enabler: function(key) {
-    return (function(value) { this.enable(key, value); }).bind(this);
-  },
-
-  disable: function(key) {
-    this.enable(key, false);
+  disableButtons: function() {
+    this.el.classList.add(this.buttonsDisabledClass);
+    debug('buttons disabled');
   },
 
   setVideoTimer: function(ms) {
@@ -57,29 +94,52 @@ module.exports = View.extend({
     this.els.timer.textContent = formatted;
   },
 
-  onButtonClick: function(e, el) {
-    e.stopPropagation();
+  onButtonClick: function(event) {
+    var el = event.currentTarget;
     var name = el.getAttribute('name');
-    this.emit('click:' + name, e);
+    this.emit('click:' + name);
   },
 
-  template: function() {
-    return '<a class="switch-button test-switch js-btn" name="switch">' +
-      '<span class="icon rotates"></span>' +
-    '</a>' +
-    '<a class="capture-button test-capture js-btn" name="capture">' +
-      '<span class="icon rotates"></span>' +
-    '</a>' +
-    '<div class="misc-button">' +
-      '<a class="gallery-button test-gallery js-btn" name="gallery">' +
-        '<span class="icon-gallery rotates"></span>' +
-      '</a>' +
-      '<a class="cancel-pick test-cancel-pick js-btn" name="cancel">' +
-        '<span></span>' +
-      '</a>' +
-      '<span class="video-timer test-video-timer js-video-timer">00:00</span>' +
-    '</div>';
+  addTimerUI:function(value){
+    var divEle = document.createElement('div');
+    divEle.id = "timerDiv"; 
+    divEle.classList.add('capturetimer');
+    divEle.setAttribute("data-value",value.toString());
+    var span = document.createElement('span');
+    span.id = "valueSpan";
+    span.innerHTML = value;
+    
+    divEle.appendChild(span);
+    document.body.appendChild(divEle);
   },
+  updateTumerUI:function(value){
+    var elem = find('#timerDiv', document.body);
+    var span = find('#valueSpan',elem);
+    span.innerHTML = value;
+    elem.setAttribute("data-value",value.toString());
+    if(value == 0)
+      this.addLastTimeWrapper();
+  },
+  removeTimerUI:function(){
+    var elem = find('#timerDiv', document.body);
+    elem.innerHTML = "";
+    elem.parentNode.removeChild(elem);
+  },
+  addLastTimeWrapper:function(){
+    var divEle = document.createElement('div');
+    divEle.classList.add('captureDiv');
+    document.body.appendChild(divEle);
+    setTimeout(function(){
+      divEle.parentNode.removeChild(divEle);
+    },1500);
+  },
+  addThumbnail: function() {
+    var thumbnail = new Image();
+    thumbnail.id="thumbnail-button";
+    thumbnail.classList.add('thumbnail-btn');
+    return this.els.thumbnailButton.appendChild(thumbnail);
+  },
+
 });
 
 });

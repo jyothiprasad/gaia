@@ -1,0 +1,413 @@
+define(function(require, exports, module) {
+'use strict';
+
+/**
+ * Exports
+ */
+
+module.exports = {
+
+CameraMenuItems:{
+	"photo":{
+       "ImageSize":{
+            "MenuID":"Image Size",
+            "disabled":false,
+            "l10ID":"",
+            "value":"4:3",
+            "persistant":true,
+            "options":{
+                 "4:3":{
+                    "value":{
+                        "width":2592,
+                        "height":1944
+                    },
+                    "name":"4:3",
+                    "icon":"camera-ImageSize-fivemp",
+                    "subicon":"camera-ImageSize-fivempsubicon",
+                    "l10ID":""
+                }, 
+                "1:1":{
+                    "value":{
+                        "width":176,
+                        "height":144
+                    },
+                    "name":"1:1",
+                    "icon":"camera-ImageSize-threemp",
+                    "subicon":"camera-ImageSize-threempsubicon",
+                    "l10ID":""
+                }, 
+                "16:9":{
+                    "value":{
+                        "width":800,
+                        "height":480
+                    },
+                    "name":"16:9",
+                    "icon":"camera-ImageSize-wmp",
+                    "subicon":"camera-ImageSize-wmpsubicon",
+                    "l10ID":""
+                }
+            }
+        },
+        "VideoSize":{
+            "MenuID":"Video Size",
+            "disabled":false,
+            "l10ID":"",
+            "value":"16:9",
+            "persistant":true,
+            "options": {
+                "16:9":{
+                    "value":'720p',
+                   /*{
+                        "width":320,
+                        "height":240
+                    },*/
+                    "name":"16:9",
+                    "icon":"video-size-hd",
+                    "subicon":"video-size-hd-subicon",
+                    "l10ID":""
+                },
+                "3:2":{
+                   "value":'480p',
+                   /*{
+                        "width":320,
+                        "height":240
+                    },*/
+                    "name":"3:2",
+                    "icon":"video-size-qvga",
+                    "subicon":"video-size-qvga-subicon",
+                    "l10ID":""
+                },
+                "5:4":{
+                   "value":'low',
+                   /*{
+                        "width":320,
+                        "height":240
+                    },*/
+                    "name":"5:4",
+                    "icon":"video-size-qcif",
+                    "subicon":"video-size-qcif-subicon",
+                    "l10ID":""
+                }
+            }, 
+
+        },
+        "HDR":{
+            "MenuID":"HDR",
+            "disabled":false,
+            "l10ID":"",
+            "value":"Off",
+            "persistant":false,
+            "options":{
+                "On":{
+                    "value":'1',
+                    "name":"On",
+                    "icon":"camera-HDR-on",
+                    "subicon":"camera-HDR-on-subicon",
+                    "l10ID":""
+                }, 
+                "Off":{
+                    "value":'0',
+                    "name":"Off",
+                    "icon":"camera-HDR-off",
+                    "subicon":"camera-HDR-off-subicon",
+                    "l10ID":""
+                },  
+            },
+        },
+        "Timer":{
+            "MenuID":"Timer",
+            "disabled":false,
+            "l10ID":"",
+            "value":"Off",
+            "persistant":false,
+            "options":{
+                "Off":{
+                    "value":0,
+                    "name":"Off",
+                    "icon":"camera-timer-off",
+                    "subicon":"camera-timer-off-subicon",
+                    "l10ID":""
+                }, 
+                "3 Sec":{
+                    "value":3,
+                    "name":"3 Sec",
+                    "icon":"camera-timer-3sec",
+                    "subicon":"camera-timer-3sec-subicon",
+                    "l10ID":""
+                }, 
+                "5 Sec":{
+                    "value":5,
+                    "name":"5 Sec",
+                    "icon":"camera-timer-5sec",
+                    "subicon":"camera-timer-5sec-subicon",
+                    "l10ID":""
+                },
+                "10 Sec":{
+                    "value":10,
+                    "name":"10 Sec",
+                    "icon":"camera-timer-10sec",
+                    "subicon":"camera-timer-10sec-subicon",
+                    "l10ID":""
+                },      
+            },
+        },
+        "Zoom":{
+            "MenuID":"Zoom",
+            "disabled":true,
+            "l10ID":"",
+            "value":"1x",
+            "persistant":false,
+            "options":{
+                "1x":{
+                    "value":1,
+                    "name":"1x",
+                    "icon":"camera-zoom-icon",
+                    "subicon":"camera-zoom-icon-subicon",
+                    "l10ID":""
+                }, 
+                "2x":{
+                    "value":15,
+                    "name":"2x",
+                    "icon":"camera-zoom-icon",
+                    "subicon":"camera-zoom-icon-subicon",
+                    "l10ID":""
+                }, 
+                "4x":{
+                    "value":30,
+                    "name":"4x",
+                    "icon":"camera-zoom-icon",
+                    "subicon":"camera-zoom-icon-subicon",
+                    "l10ID":""
+                },
+                "8x":{
+                    "value":45,
+                    "name":"8x",
+                    "icon":"camera-zoom-icon",
+                    "subicon":"camera-zoom-icon-subicon",
+                    "l10ID":""
+                },      
+            },
+        },
+        "ShotMode":{
+            "MenuID":"Shot Mode",
+            "disabled":false,
+            "l10ID":"",
+            "value":"Normal",
+            "persistant":false,
+            "options":{
+                "Normal":{
+                    "value":"normal",
+                    "name":"Normal",
+                    "icon":"camera-shotmode-normal",
+                    "subicon":"camera-shotmode-normal-subicon",
+                    "l10ID":""
+                }, 
+                "Panaroma":{
+                    "value":"panaroma",
+                    "name":"Panaroma",
+                    "icon":"camera-shotmode-panaroma",
+                    "subicon":"camera-shotmode-panaroma-subicon",
+                    "l10ID":""
+                }       
+            },
+        },
+        "WhiteBalance":{
+            "MenuID":"White Balance",
+            "disabled":false,
+            "l10ID":"",
+            "value":"Auto",
+            "persistant":false,
+            "options":{
+                "Auto":{
+                    "value":"auto",
+                    "name":"Auto",
+                    "icon":"camera-WB-auto",
+                    "subicon":"camera-WB-auto-subicon",
+                    "l10ID":""
+                }, 
+                "Incandescent":{
+                    "value":"incandescent",
+                    "name":"Incandescent",
+                    "icon":"camera-WB-incandescent",
+                    "subicon":"camera-WB-incandescent-subicon",
+                    "l10ID":""
+                },
+                "Fluorescent":{
+                    "value":"fluorescent",
+                    "name":"Fluorescent",
+                    "icon":"camera-WB-fluorescent",
+                    "subicon":"camera-WB-fluorescent-subicon",
+                    "l10ID":""
+                }        
+            },
+
+        },
+         "ISO":{
+            "MenuID":"ISO",
+            "disabled":false,
+            "l10ID":"",
+            "value":"ISO Auto",
+            "persistant":false,
+            "options":{
+                "ISO Auto":{
+                    "value":"auto",
+                    "name":"ISO Auto",
+                    "icon":"camera-iso-auto",
+                    "subicon":"camera-iso-auto-subicon",
+                    "l10ID":""
+                },
+                "ISO 400":{
+                    "value":"ISO400",
+                    "name":"ISO 400",
+                    "icon":"camera-iso-400",
+                    "subicon":"camera-iso-400-subicon",
+                    "l10ID":""
+                }, 
+                "ISO 200":{
+                    "value":"ISO200",
+                    "name":"ISO 200",
+                    "icon":"camera-iso-200",
+                    "subicon":"camera-iso-200-subicon",
+                    "l10ID":""
+                },
+                "ISO 100":{
+                    "value":"ISO100",
+                    "name":"ISO 100",
+                    "icon":"camera-iso-100",
+                    "subicon":"camera-iso-100-subicon",
+                    "l10ID":""
+                }, 
+                      
+            },
+        },
+         "FrameGrid":{
+             "MenuID":"Frame Grid",
+            "disabled":false,
+            "l10ID":"",
+            "value":"Off",
+            "persistant":true,
+            "options": {
+                  "On":{
+                    "value":true,
+                    "name":"On",
+                    "icon":"camera-FrameGrid-on",
+                    "subicon":"camera-FrameGrid-on-subicon",
+                    "l10ID":""
+                }, 
+                "Off":{
+                    "value":false,
+                    "name":"Off",
+                    "icon":"camera-FrameGrid-off",
+                    "subicon":"camera-FrameGrid-off-subicon",
+                    "l10ID":""
+                },  
+            },
+        },
+        "Battery":{
+            "MenuID":"Battery",
+            "disabled":false,
+            "l10ID":"",
+            "value":"Normal",
+            "persistant":false,
+            "options":{
+                "Normal":{
+                    "value":30,
+                    "name":"Normal",
+                    "icon":"camera-iso-auto",
+                    "subicon":"camera-iso-auto-subicon",
+                    "l10ID":""
+                },
+                "15%":{
+                    "value":15,
+                    "name":"15%",
+                    "icon":"camera-iso-400",
+                    "subicon":"camera-iso-400-subicon",
+                    "l10ID":""
+                }, 
+                "10%":{
+                    "value":10,
+                    "name":"10%",
+                    "icon":"camera-iso-200",
+                    "subicon":"camera-iso-200-subicon",
+                    "l10ID":""
+                },
+                "6%":{
+                    "value":6,
+                    "name":"6%",
+                    "icon":"camera-iso-100",
+                    "subicon":"camera-iso-100-subicon",
+                    "l10ID":""
+                }, 
+                "5%":{
+                    "value":5,
+                    "name":"5%",
+                    "icon":"camera-iso-400",
+                    "subicon":"camera-iso-400-subicon",
+                    "l10ID":""
+                },
+                      
+            },
+        },
+        "Help":{
+            "MenuID":"Help",
+            "disabled":false,
+            "l10ID":"",
+            "icon":"camera-help",
+            "value":null,
+            "persistant":false,
+            "options": null,
+        },
+       
+    },
+	"video":{
+	    "VideoSize":{
+            "MenuID":"Video Size",
+            "disabled":false,
+            "l10ID":"",
+            "value":"16:9",
+            "persistant":true,
+            "options": {
+                "16:9":{
+                    "value":'720p',
+                   /*{
+                        "width":320,
+                        "height":240
+                    },*/
+                    "name":"16:9",
+                    "icon":"video-size-hd",
+                    "subicon":"video-size-hd-subicon",
+                    "l10ID":""
+                },
+                "3:2":{
+                   "value":'480p',
+                   /*{
+                        "width":320,
+                        "height":240
+                    },*/
+                    "name":"3:2",
+                    "icon":"video-size-qvga",
+                    "subicon":"video-size-qvga-subicon",
+                    "l10ID":""
+                },
+                "5:4":{
+                   "value":'low',
+                   /*{
+                        "width":320,
+                        "height":240
+                    },*/
+                    "name":"5:4",
+                    "icon":"video-size-qcif",
+                    "subicon":"video-size-qcif-subicon",
+                    "l10ID":""
+                }
+            }, 
+
+        },
+	}
+	
+},
+cameraPersisItems:{},
+camcorderPersisItems:{}
+
+};
+});

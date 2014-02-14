@@ -1,163 +1,367 @@
+.menusettings{
+	 z-index: 70;
+	/*top:7.5rem;
+	left:2rem;*/
+	top:14%;
+	left:5%;
+	opacity:0.8;
+    background-color:#E0E0E0;
+    width:90%;   
+    position:absolute;
+    color: #606060;
+  /*  border: 0.1rem #666666 solid;*/
+    margin:0;
+  /* border:0.1rem red solid;	*/
+    padding: 0;
+	overflow: scroll;
+	max-height: 60%;
 
-/**
- * 1. Height of controls
- * 2. Stack on top of hud.
- */
 
-.settings {
-  position: absolute;
-  left: 0; top: 0;
-  bottom: 4.5rem; /* 1 */
-  z-index: 20; /* 2 */
-  width: 100%;
-  font-size: 1.6rem;
-  color: #FFF;
-  white-space: nowrap;
-  transform: translateZ(1px);
-  overflow: hidden;
+	font-size:1.4rem;
+	font-weight: bold;
 }
 
-/**
- * COMPLEX
- *
- * The camera app has fixed rotation,
- * this means that when the orientation of the
- * device changes, the application doesn't rotate.
- *
- * Although the settings menu must rotate. This
- * means we need to use CSS transforms to reposition
- * the settings menu so that it appears rotate with
- * the orientation of the device.
- *
- */
-
-/**
- * @deg90
- *
- * 1. Viewport height minus controls height
- */
-
-.deg90 .settings {
-  width: calc(100vh - 4.5rem); /* 1 */
-  height: 100vw;
-  transform:
-    rotate(270deg)
-    translate(-100vh, 0)
-    translate(4.5rem, 0);
-  transform-origin: 0 0;
+ ul{
+	margin:0;
+	padding: 0;
+	width:100%;
+}
+ .menusettings .gridMenulist{
+	margin:0;	
+	padding: 0;
+/*	width:11.18rem;*/
+	/*height:8.0rem;*/
+	width:33%;
+	height:8.3rem;
+	overflow:scroll;
+	font-size:1.4rem;
+	font-weight: bold;
+	list-style-type: none;
+	border:0.05rem #606060 solid;
+	display:inline-table;
+	background-size: 40%;
+	background-position:top;
+	background-repeat: no-repeat;
+	text-align: center;
+	
 }
 
-/**
- * @deg180
- */
-
-.deg180 .settings {
-  transform: rotate(180deg);
+.menusettings .gridMenulist .menuName{
+  position: relative;
+  top: 5rem;
+}
+.menusettings .gridMenulist .menuValue{
+  position: relative;
+  top: 5.2rem;
+  font-size: 1.2rem;
+  color:#03A2B4;
 }
 
-/**
- * @deg270
- *
- * 1. Viewport height minus controls height
- */
 
-.deg270 .settings {
-  width: calc(100vh - 4.5rem);
-  height: 100vw;
-  transform:
-    rotate(90deg)
-    translate(0px, -100vw);
-  transform-origin: 0 0;
+.hidden {
+  display: none;
 }
 
-/** Pane
- ---------------------------------------------------------*/
-
-.pane {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  height: 100%;
-  transform: translateX(0);
-  /*transition: transform 300ms;*/
+.menusettings .inlineMenu{
+	margin:0;	
+	width:100%;
+	/*height:40%;*/
+	overflow:scroll;
+	font-size:1.7rem;
+	font-weight: bold;
+	background-color: #333333;
+	color:#CCCCCC;
 }
 
-[show-pane=pane-2] .pane {
-  transform: translateX(-100%);
+.inlineMenu li{
+padding-left:10.0rem;
+padding-top:1.5rem;
+padding-bottom:1.5rem;
+border-bottom:0.05rem #CCCCCC solid;
+list-style-type: none;
+background-size: 3.5rem;
+background-position:10%50%;
+background-repeat: no-repeat;
+}
+.inlineMenu li:active{
+	background-color: #3A5FCD;
+}
+.inlineMenu li img{
+float: right;
+padding-right: 5rem;
+pointer-events:none;
 }
 
-/** Pane 1
- ---------------------------------------------------------*/
-
-
-
-/** Pane 2
- ---------------------------------------------------------*/
-
-
-/** Inner
- ---------------------------------------------------------*/
-
-.settings_inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.camera-ImageSize-fivemp[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_image_size_5m_expand_selected.png);
+}
+.camera-ImageSize-fivemp[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_image_size_5m_expand.png);
+}
+.camera-ImageSize-fivempsubicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_5m_expand.png);
 }
 
-/** Header
- ---------------------------------------------------------*/
 
-.settings_header {
-
+.camera-ImageSize-threemp[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_image_size_3m_expand_selected.png);
+}
+.camera-ImageSize-threemp[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_image_size_3m_expand.png);
+}
+.camera-ImageSize-threempsubicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_3m_expand.png);
 }
 
-/** Title
- ---------------------------------------------------------*/
-
-.settings_title {
-  height: 9rem;
-  line-height: 9rem;
-  padding-left: 3rem;
-  font-size: 2rem;
-  color: rgba(255,255,255,0.8);
-  background: rgba(0,0,0,0.85);
+.camera-ImageSize-wmp[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_image_size_w3m_expand_selected.png);
+}
+.camera-ImageSize-wmp[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_image_size_w3m_expand.png);
+}
+.camera-ImageSize-wmpsubicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_w3m_expand.png);
 }
 
-.deg270 .settings_title {
-  padding-left: 10.5rem;
+.camera-HDR-on[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_w3m_expand.png);
 }
 
-/** Items
- ---------------------------------------------------------*/
-
-.settings_items {
-  flex: 1;
-  overflow: scroll;
+.camera-HDR-on[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_w3m_expand.png);
+}
+.camera-HDR-on-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_w3m_expand.png);
+}
+.camera-HDR-off[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_w3m_expand.png);
+}
+.camera-HDR-off[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_w3m_expand.png);
+}
+.camera-HDR-off-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_image_size_w3m_expand.png);
 }
 
-.settings_items > .inner {
-  background: rgba(0,0,0,0.85);
+.camera-timer-off[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_expand_selected.png);
 }
 
-.deg270 .settings_items > .inner {
-  padding-left: 7.5rem;
+.camera-timer-off[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_expand.png);
+}
+.camera-timer-off-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_timer_none_expand.png);
 }
 
-/** Close
- ---------------------------------------------------------*/
 
-/**
- * @extends .hud a
- */
-
-.settings_close {
-  position: absolute;
-  top: 0; right: 0;
-  font-size: 2rem;
-  background-color: #008eab;
+.camera-timer-3sec[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_3_expand_selected.png);
 }
 
-.deg270 .settings_close {
-  right: auto;
-  left: 0;
+.camera-timer-3sec[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_3_expand.png);
+}
+.camera-timer-3sec-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_timer_3_expand.png);
+}
+
+
+.camera-timer-5sec[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_5_expand_selected.png);
+}
+
+.camera-timer-5sec[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_5_expand.png);
+}
+.camera-timer-5sec-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_timer_5_expand.png);
+}
+
+.camera-timer-10sec[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_10_expand_selected.png);
+}
+
+.camera-timer-10sec[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_10_expand.png);
+}
+.camera-timer-10sec-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_timer_10_expand.png);
+}
+
+.camera-shotmode-normal[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_10_expand_selected.png);
+}
+.camera-shotmode-normal[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_10_expand.png);
+}
+
+.camera-shotmode-normal-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_timer_10_expand.png);
+}
+
+
+.camera-shotmode-panaroma[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_3_expand_selected.png);
+}
+.camera-shotmode-panaroma[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_timer_3_expand.png);
+}
+
+.camera-shotmode-panaroma-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_timer_3_expand.png);
+}
+
+.camera-help[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_help_c.png);
+}
+.camera-help[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_help_guide.png);
+}
+
+
+.video-size-hd[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_size_hd_selected.png);
+}
+.video-size-hd[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_size_hd.png);
+}
+.video-size-hd-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_size_hd_expand.png);
+}
+
+
+
+.video-size-qvga[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_size_qvga_selected.png);
+}
+.video-size-qvga[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_size_qvga.png);
+}
+.video-size-qvga-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_size_qvga_expand.png);
+}
+
+
+.video-size-qcif[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_size_qcif_selected.png);
+}
+.video-size-qcif[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_size_qcif.png);
+}
+.video-size-qcif-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_size_qcif_expand.png);
+}
+
+
+
+.camera-zoom-icon[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_volume_zoom_selected.png);
+}
+
+.camera-zoom-icon[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_volume_zoom.png);
+}
+.camera-zoom-icon-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_volume_zoom.png);
+}
+
+.camera-FrameGrid-on[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_focus_multi_selected.png);
+}
+.camera-FrameGrid-on[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_focus_multi.png);
+}
+.camera-FrameGrid-on-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_focus_multi.png);
+}
+
+.camera-FrameGrid-off[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_focus_face_expand_selected.png);
+}
+.camera-FrameGrid-off[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_focus_face_expand.png);
+}
+.camera-FrameGrid-off-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_focus_face_expand.png);
+}
+
+.camera-WB-auto[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_white_balance_auto_expand_selected.png);
+}
+.camera-WB-auto[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_white_balance_auto_expand.png);
+}
+.camera-WB-auto-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_white_balance_auto_expand.png);	
+}
+
+.camera-WB-incandescent[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_white_balance_incandescent_expand_selected.png);
+}
+.camera-WB-incandescent[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_white_balance_incandescent_expand.png);
+}
+.camera-WB-incandescent-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_white_balance_incandescent_expand.png);	
+}
+
+.camera-WB-fluorescent[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_fluorescent_expand_selected.png);
+}
+.camera-WB-fluorescent[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_fluorescent_expand.png);
+}
+.camera-WB-fluorescent-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_white_balance_fluorescent_expand.png);	
+}
+
+
+.camera-iso-auto[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_auto_expand_selected.png);
+}
+
+.camera-iso-auto[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_auto_expand.png);
+}
+
+.camera-iso-auto-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_iso_auto_expand.png);
+}
+
+.camera-iso-100[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_100_expand_selected.png);
+}
+
+.camera-iso-100[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_100_expand.png);
+}
+
+.camera-iso-100-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_iso_100_expand.png);
+}
+
+
+.camera-iso-200[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_200_expand_selected.png);
+}
+
+.camera-iso-200[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_200_expand.png);
+}
+
+.camera-iso-200-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_iso_200_expand.png);
+}
+
+.camera-iso-400[data-select=on]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_400_expand_selected.png);
+}
+
+.camera-iso-400[data-select=off]{
+	background-image: url(images/drawable-hdpi/camera_icon_iso_400_expand.png);
+}
+
+.camera-iso-400-subicon{
+	background-image: url(images/drawable-hdpi/camera_icon_sub_iso_400_expand.png);
 }

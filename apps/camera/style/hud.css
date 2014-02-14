@@ -1,12 +1,9 @@
-
 .hud {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 7.5rem;
-  z-index: 10;
-  text-align: center;
-  transform: translateZ(1px);
+  z-index: 50;
 }
 
 body:not(.filmstriphidden) .hud {
@@ -24,20 +21,15 @@ body:not(.filmstriphidden) .hud {
  *    back to the default color.
  */
 
-.hud a,
-.settings_close {
-  display: inline-block;
+.hud a {
   height: 5rem;
   width: 5rem;
-  line-height: 5rem;
-  text-align: center;
   border-radius: 50%;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,.3);
   background-clip: padding-box; /* 1 */
   border: solid 2rem transparent; /* 1 */
-  -moz-box-sizing: content-box; /* 1 */
   transition: background-color 1s; /* 2 */
   color: #fff;
 }
@@ -47,19 +39,19 @@ body:not(.filmstriphidden) .hud {
   transition: none; /* 2 */
 }
 
-.hud a:first-child {
+/*.hud a:first-child {
   float: left;
 }
 
 .hud a:last-child {
   float: right;
-}
+}*/
 
 /**
  * @buttons-disabled
  */
 
-.hud[buttons-enabled=false] a {
+.hud.buttons-disabled a {
   pointer-events: none;
 }
 
@@ -67,36 +59,43 @@ body:not(.filmstriphidden) .hud {
  ---------------------------------------------------------*/
 
 .toggle-camera {
-  background-image: url(images/toggle-camera.png);
+  float: left;
+  display: none;
+  background-image: url(images/Viewfinder-ToggleFrontRearCamera.png);
   background-size: 100%;
-  transition: opacity 300ms;
-  opacity: 0;
 }
 
-/**
- * @camera-enabled
- */
-
-.hud[camera-enabled=true] .toggle-camera {
-  opacity: 1;
+.setting-btn{
+  float: right;
+  
+  background-image: url(images/Viewfinder-Menu.png);
+  background-size: 100%;
 }
 
-/**
- * @camera-hidden
- */
-
-.hud[camera-hidden=true] .toggle-camera {
-  opacity: 0;
-}
 
 /**
- * @toggling-camera
+ * @is-toggling-camera
  */
 
-.hud[toggling-camera=true] .toggle-camera {
+.is-toggling-camera .toggle-camera {
   background-color: #00b9df;
 }
 
+/**
+ * @has-front-camera
+ */
+
+.has-front-camera .toggle-camera {
+  display: block;
+}
+
+/**
+ * @recording
+ */
+
+.recording .toggle-camera {
+  display: none;
+}
 
 /** Flash Button
  ---------------------------------------------------------*/
@@ -106,53 +105,36 @@ body:not(.filmstriphidden) .hud {
  */
 
 .toggle-flash {
-  position: relative; /* 1 */
+  position: absolute; /* 1 */
+  left:40% ;
   visibility: hidden;
   background-size: 100%;
   transition: opacity 300ms;
   opacity: 0;
 }
 
-/**
- * @flash-enabled
- */
-
-.hud[flash-enabled=true] .toggle-flash {
+.toggle-flash[data-mode=on],
+.toggle-flash[data-mode=off],
+.toggle-flash[data-mode=auto],
+.toggle-flash[data-mode=torch] {
   visibility: visible;
   opacity: 1;
 }
 
-/**
- * @settings-disabled
- */
-
-.hud[settings-enabled=false] .toggle-flash {
-  float: right;
+.toggle-flash[data-mode=on] {
+  background-image: url(images/Viewfinder-Flash-On.png);
 }
 
-
-/**
- * @camera-hidden
- */
-
-.hud[flash-hidden=true] .toggle-flash {
-  opacity: 0;
+.toggle-flash[data-mode=off] {
+  background-image: url(images/Viewfinder-Flash-Off.png);
 }
 
-.hud[flash-mode=on] .toggle-flash {
-  background-image: url(images/flash_on.png);
+.toggle-flash[data-mode=auto] {
+  background-image: url(images/Viewfinder-Flash-Auto.png);
 }
 
-.hud[flash-mode=off] .toggle-flash {
-  background-image: url(images/flash_off.png);
-}
-
-.hud[flash-mode=auto] .toggle-flash {
-  background-image: url(images/flash_auto.png);
-}
-
-.hud[flash-mode=torch] .toggle-flash {
-  background-image: url(images/flash_on.png);
+.toggle-flash[data-mode=torch] {
+  background-image: url(images/Viewfinder-Flash-On.png);
 }
 
 /** Flash Text
@@ -160,7 +142,7 @@ body:not(.filmstriphidden) .hud {
 
 .flash-text {
   position: absolute;
-  top: 50%; left: 100%;
+  top: 110%; left: 0%;
   margin: 0 1rem;
   margin-top: -0.4em;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -181,8 +163,8 @@ body:not(.filmstriphidden) .hud {
  * endge of the screen.
  */
 
-.deg90 .flash-text,
-.deg180 .flash-text {
+body[data-orientation=deg90] .flash-text,
+body[data-orientation=deg180] .flash-text {
   left: auto;
   right: 100%;
 }
@@ -195,7 +177,7 @@ body:not(.filmstriphidden) .hud {
  * the flash text.
  */
 
-.hud[toggling-flash=true] .flash-text {
+.is-toggling .flash-text {
   opacity: 1;
   transition: none;
 }
@@ -205,19 +187,4 @@ body:not(.filmstriphidden) .hud {
 
 .flash-name {
   text-transform: capitalize;
-}
-
-/** Settings
- ---------------------------------------------------------*/
-
-.hud_settings {
-  font-size: 2rem;
-}
-
-/**
- * @settings-disabled
- */
-
-.hud[settings-enabled=false] .hud_settings {
-  display: none;
 }

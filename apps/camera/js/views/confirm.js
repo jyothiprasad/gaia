@@ -5,10 +5,10 @@ define(function(require, exports, module) {
  * Dependencies
  */
 
-var addPanAndZoomHandlers = require('lib/panzoom');
-var MediaFrame = require('MediaFrame');
+var bind = require('utils/bind');
 var View = require('vendor/view');
-var bind = require('lib/bind');
+var addPanAndZoomHandlers = require('panzoom');
+var MediaFrame = require('MediaFrame');
 
 /**
  * Exports
@@ -24,8 +24,6 @@ module.exports = View.extend({
   render: function() {
     var l10n = navigator.mozL10n;
 
-    this.show();
-
     this.el.innerHTML = this.template({
       retake: l10n.get('retake-button'),
       select: l10n.get('select-button')
@@ -39,8 +37,6 @@ module.exports = View.extend({
     // Events
     bind(this.els.retake, 'click', this.onButtonClick);
     bind(this.els.select, 'click', this.onButtonClick);
-
-    this.setupMediaFrame();
     return this;
   },
 
@@ -48,14 +44,6 @@ module.exports = View.extend({
     this.mediaFrame = new MediaFrame(this.els.mediaFrame);
     addPanAndZoomHandlers(this.mediaFrame);
     return this;
-  },
-
-  hide: function() {
-    this.el.classList.add('hidden');
-  },
-
-  show: function() {
-    this.el.classList.remove('hidden');
   },
 
   showImage: function(image) {
@@ -85,7 +73,7 @@ module.exports = View.extend({
     '<footer id="confirm-controls" class="confirm-controls">' +
       '<button class="retake-button js-retake" name="retake">' +
       data.retake + '</button>' +
-      '<button class="select-button test-confirm-select js-select" name="select">' +
+      '<button class="select-button recommend js-select" name="select">' +
       data.select + '</button>' +
     '</footer>';
   },

@@ -5,12 +5,11 @@ define(function(require) {
  * Dependencies
  */
 
-var bind = require('lib/bind');
-var CameraUtils = require('lib/camera-utils');
-var debug = require('debug')('view:viewfinder');
+var bind = require('utils/bind');
+var CameraUtils = require('utils/camera-utils');
 var constants = require('config/camera');
 var View = require('vendor/view');
-
+var find = require('utils/find');
 /**
  * Locals
  */
@@ -21,6 +20,7 @@ var lastTouchA = null;
 var lastTouchB = null;
 var isScaling = false;
 var scale = 1.0;
+var touchPt ={ x:0,y:0};
 
 var getNewTouchA = function(touches) {
   if (!lastTouchA) return null;
@@ -52,12 +52,14 @@ var getDeltaScale = function(touchA, touchB) {
 };
 
 return View.extend({
-  name: 'viewfinder',
   tag: 'video',
-  className: 'js-viewfinder',
+  className: 'viewfinder js-viewfinder',
   fadeTime: 200,
   initialize: function() {
     bind(this.el, 'click', this.onClick);
+    bind(this.el, 'touchstart', this.onTouchStart);
+    bind(this.el, 'touchmove', this.onTouchMove);
+    bind(this.el, 'touchend', this.onTouchEnd);
     this.el.autoplay = true;
   },
 
@@ -72,6 +74,18 @@ return View.extend({
       lastTouchB = evt.touches[1];
       isScaling = true;
     }
+    if (touchCount === 1) {
+      touchPt.x = evt.touches[0].pageX;
+      touchPt.y = evt.touches[0].pageY;
+
+      this.emit('touchFocusMode');
+    }
+  },
+
+  getTouchPoints: function() {
+  //  console.log("CCC touchPt.x:"+touchPt.x);
+  //  console.log("CCC touchPt.y:"+touchPt.y);
+    return touchPt;
   },
 
   onTouchMove: function(evt) {
@@ -90,6 +104,8 @@ return View.extend({
 
     lastTouchA = touchA;
     lastTouchB = touchB;
+
+    this.emit('touchmove');
   },
 
   onTouchEnd: function(evt) {
@@ -102,7 +118,11 @@ return View.extend({
   setScale: function(scale) {
     scale = Math.min(Math.max(scale, MIN_VIEWFINDER_SCALE),
                      MAX_VIEWFINDER_SCALE);
-    this.el.style.transform = 'scale(' + scale + ', ' + scale + ')';
+    //this.el.style.transform = 'scale(' + scale + ', ' + scale + ')';
+  },
+
+  getScale: function() {
+    return scale;
   },
 
   setPreviewStream: function(previewStream) {
@@ -139,7 +159,7 @@ return View.extend({
   },
 
   updatePreview: function(previewSize, mirrored) {
-    debug('update preview, mirrored: %s', mirrored);
+
     // Use the device-independent viewport size for transforming the
     // preview using CSS
     var deviceIndependentViewportSize = {
@@ -149,7 +169,7 @@ return View.extend({
 
     // Scale the optimal preview size to fill the viewport (will
     // overflow if necessary)
-    var scaledPreviewSize = CameraUtils.scaleSizeToFillViewport(
+    var scaledPreviewSize = CameraUtils.scaleSizeToFitViewport(
                               deviceIndependentViewportSize,
                               previewSize);
 
@@ -170,10 +190,77 @@ return View.extend({
                    scaledPreviewSize.width) / 2;
     var offsetY = (deviceIndependentViewportSize.width -
                    scaledPreviewSize.height) / 2;
+    console.log('GGG offsetY: '+offsetY);
+    console.log('GGG offsetX: '+offsetX);
+    // For Demo
+    var xxx = -1 * offsetX;
+    if (xxx < 80 && xxx > 50)
+      offsetY =  75;
+    else if (xxx < 50)
+      offsetY = 110;
 
     this.el.style.left = offsetX + 'px';
     this.el.style.top = offsetY + 'px';
-  }
+
+    var grid = find('#PreviewframeGrid',document);
+    if(grid)
+    {
+      this.setGridPosition(grid,previewSize,mirrored);
+    }
+  },
+
+  addGridPreview: function(previewSize,mirrored){
+    var gridDiv = document.createElement("Div");
+    gridDiv.classList.add('frameGrid');
+    gridDiv.id = "PreviewframeGrid";
+    this.setGridPosition(gridDiv,previewSize);
+    gridDiv.appendChild(this.appentGrid());
+    document.body.appendChild(gridDiv);
+  },
+  setGridPosition: function(gridDiv,previewSize,mirrored){
+    var deviceIndependentViewportSize = {
+      width: document.body.clientHeight,
+      height: document.body.clientWidth
+    };
+    var scaledPreviewSize = CameraUtils.scaleSizeToFitViewport(
+                              deviceIndependentViewportSize,
+                              previewSize);
+    gridDiv.style.width = scaledPreviewSize.width + 'px';
+    gridDiv.style.height = scaledPreviewSize.height + 'px';
+    var transform = 'rotate(90deg)';
+    if (mirrored) {
+      // backwards-facing camera
+      transform += ' scale(-1, 1)';
+    }
+    gridDiv.style.transform = transform;
+    var offsetX = (deviceIndependentViewportSize.height -
+                   scaledPreviewSize.width) / 2;
+    var offsetY = (deviceIndependentViewportSize.width -
+                   scaledPreviewSize.height) / 2;
+    gridDiv.style.left = offsetX + 'px';
+    gridDiv.style.top = offsetY + 'px';
+  },
+  appentGrid:function(){
+    var table = document.createElement("table");
+     for(var i=0;i<3;i++)
+     {
+        var tr = document.createElement("tr");
+        for(var j=0; j<3 ; j++){
+          var td = document.createElement("td");
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+     }
+     return table;
+  },
+  removeGridPreview: function (){
+    var grid = find('#PreviewframeGrid',document);
+    if(grid)
+    {
+      grid.innerHTML = "";
+      grid.parentNode.removeChild(grid);
+    }
+  },
 });
 
 });

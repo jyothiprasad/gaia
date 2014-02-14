@@ -46,12 +46,19 @@ suite('controllers/confirm', function() {
     });
   });
 
-  suite('ConfirmController#onNewMedia()', function() {
+  suite('ConfirmController#onNewImage()', function() {
     test('Should not do anything if there is no active activity', function() {
       this.app.activity.active = false;
-      this.controller.onNewMedia({});
+      this.controller.onNewImage({});
       assert.ok(this.app.ConfirmView.notCalled);
     });
   });
 
+  suite('ConfirmController#onNewVideo()', function() {
+    test('Should not do anything if there is no active activity', function() {
+      this.app.activity.active = false;
+      this.controller.onNewVideo({});
+      assert.ok(this.app.ConfirmView.notCalled);
+    });
+  });
 });
