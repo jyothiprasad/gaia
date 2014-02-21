@@ -21,6 +21,7 @@ var mixin = require('lib/mixin');
 
 var RECORD_SPACE_MIN = constants.RECORD_SPACE_MIN;
 var RECORD_SPACE_PADDING = constants.RECORD_SPACE_PADDING;
+var FOCUS_ROI_SIZE = constants.FOCUS_ROI_SIZE;
 
 /**
  * Locals
@@ -128,6 +129,8 @@ Camera.prototype.configure = function(mozCamera) {
   capabilities = mozCamera.capabilities;
   this.configureFocus(capabilities.focusModes);
   this.configurePicturePreviewSize(capabilities.previewSizes);
+  this.configureISO('auto');
+  this.configureWhiteBalance('auto');
   // Bind to some hardware events
   mozCamera.onShutter = this.onShutter;
   mozCamera.onRecorderStateChange = self.onRecorderStateChange;
@@ -151,8 +154,34 @@ Camera.prototype.formatCapabilities = function(capabilities) {
 
 Camera.prototype.setPictureSize = function(value) {
   this.mozCamera.pictureSize = value;
-  this.setThumbnailSize();
+  this.setThumbnailSize(this.mozCamera.pictureSize.width, this.mozCamera.pictureSize.height);
 };
+
+Camera.prototype.changePictureSize = function(value) {
+  this.mozCamera.pictureSize = value;
+  var viewportSize;
+  var aspectRatio = this.mozCamera.pictureSize.width/this.mozCamera.pictureSize.height;
+
+  // need to remove these hardcoded values
+  // by calculating the preview sizes
+  var availablePreviewSizes = this.mozCamera.capabilities.previewSizes;
+  viewportSize = this.viewportSize || {
+    width: window.innerHeight * window.devicePixelRatio,
+    height: window.innerWidth * window.devicePixelRatio
+  };
+  this.picturePreviewSize = pickPreviewSize(
+    viewportSize,
+    availablePreviewSizes, aspectRatio);
+ 
+  this.setThumbnailSize();
+
+  var mode = this.get('mode');
+  this.updatePreviewSize(mode);
+  if (mode === 'picture') {    
+    this.emit('changePreview');
+  }
+};
+
 
 Camera.prototype.setThumbnailSize = function() {
   var sizes = this.mozCamera.capabilities.thumbnailSizes;
@@ -186,18 +215,16 @@ Camera.prototype.changeVideoProfile = function(profileName) {
   var capabilities = this.mozCamera.capabilities;
   var recorderProfile = capabilities.recorderProfiles[profileName].video;
   this.videoProfile = profileName;
-  var mode = this.get('mode');
-
   this.videoPreviewSize = {
     height: recorderProfile.height,
     width: recorderProfile.width
   };
-
+  var mode = this.get('mode');
   this.updatePreviewSize(mode);
   if (mode === 'video') {
     this.emit('changePreview');
   }
-
+    
   debug('video profile configured', profileName);
 };
 
@@ -206,6 +233,10 @@ Camera.prototype.configurePicturePreviewSize = function(availablePreviewSizes) {
   if (!this.mozCamera) {
     return;
   }
+/*
+  availablePreviewSizes.forEach(function (size) {
+    console.log('GJP3 configurePreviewSize width X height:' + size.width + 'x' + size.height);
+  }); */
   // If no viewportSize provided it uses screen size.
   viewportSize = this.viewportSize || {
     width: window.innerWidth,
@@ -214,6 +245,7 @@ Camera.prototype.configurePicturePreviewSize = function(availablePreviewSizes) {
   this.picturePreviewSize = pickPreviewSize(
     viewportSize,
     availablePreviewSizes);
+  var self = this;
   this.updatePreviewSize();
 };
 
@@ -337,7 +369,7 @@ Camera.prototype.takePicture = function(options) {
   rotation = selectedCamera === 'front'? -rotation: rotation;
 
   this.emit('busy');
-  this.prepareTakePicture(onReady);
+  this.setAutoFocus(onReady);
 
   function onReady() {
     var position = options && options.position;
@@ -362,7 +394,14 @@ Camera.prototype.takePicture = function(options) {
     self.resumePreview();
     self.set('focus', 'none');
     self.emit('newimage', { blob: blob });
-    self.emit('ready');
+
+    // For taking a picture during video recording on dual shutter mode
+    var recording = self.get('recording');
+    var notRecording = !self.get('recording');
+    if(notRecording)
+      self.emit('ready');
+    else
+      self.emit('dual');
   }
 
   function onError() {
@@ -373,10 +412,15 @@ Camera.prototype.takePicture = function(options) {
   }
 };
 
-Camera.prototype.prepareTakePicture = function(done) {
+Camera.prototype.setAutoFocus = function(done) {
   var self = this;
 
-  if (!this.autoFocus.auto) {
+  /* [hyuna] 
+  * Add 'recording' condition to prevent set the focus
+  * when take a picture during video recording on dual shutter mode
+  */
+  var recording = this.get('recording');
+  if (!this.autoFocus.auto || recording) {
     done();
     return;
   }
@@ -592,13 +636,31 @@ Camera.prototype.resumePreview = function() {
 /**
  * Toggles between 'picture'
  * and 'video' capture modes.
- *
+ * [hyuna] Add option parameter for dual shttuer mode
  * @return {String}
  */
-Camera.prototype.setMode = function(mode) {
-  this.updatePreviewSize(mode);
-  this.set('mode', mode);
-  this.configure(this.mozCamera);
+Camera.prototype.setMode = function(mode, option) {
+  var dualShutter = this.get('dual-shutter');
+
+  if(dualShutter) {
+    if(mode === 'video') {
+      this.updatePreviewSize(mode);
+      this.set('mode', mode);
+      this.configure(this.mozCamera);
+      this.capture(option);
+    }
+    else {
+      this.capture(option);
+      this.updatePreviewSize(mode);
+      this.set('mode', mode);
+      this.configure(this.mozCamera);
+    }
+  }
+  else {
+    this.updatePreviewSize(mode);
+    this.set('mode', mode);
+    this.configure(this.mozCamera);
+  }
 };
 
 Camera.prototype.updatePreviewSize = function(mode) {
@@ -637,6 +699,132 @@ Camera.prototype.updateVideoElapsed = function() {
   var now = new Date().getTime();
   var start = this.get('videoStart');
   this.set('videoElapsed', (now - start));
+};
+
+/** 
+* [hyuna] set/get zoom value
+* To-Do: Will remove this code
+*/
+Camera.prototype.setZoom = function(scale) {
+  this.mozCamera.zoom = scale;
+};
+
+Camera.prototype.getZoom = function() {
+  return this.mozCamera.zoom;
+};
+/**
+*set HDR mode on/Off from settings
+*@ parameter receive value On/Off
+***/
+Camera.prototype.configureHDR = function(value){
+  //this.mozCamera.setParameter('hdr-mode',value);
+  //console.log(' Set value :: '+value+" <--->get value:: "+ this.mozCamera.getParameter('hdr-mode'));
+  this.set("hdr",value);
+};
+/**
+*check the HDR mode and return
+**/
+Camera.prototype.isHDROn = function(){
+  //return this.mozCamera.getParameter('hdr-mode');
+};
+/**
+* configure iso value on camera configuration
+* parameter value to set in iso
+**/
+Camera.prototype.configureISO = function(value){
+ // var capabilities =  this.mozCamera.getParameter("iso-values");
+ // if(capabilities.indexOf(value) > -1)
+ //   this.mozCamera.setParameter('iso',value);
+  //console.log(' Set value :: '+value+" <--->get value:: "+ this.mozCamera.getParameter('iso'));
+};
+/**
+* configure white balace value on camera configuration
+*@ parameter value to set in white balance
+**/
+Camera.prototype.configureWhiteBalance = function(value){
+  var modes =  this.mozCamera.capabilities.whiteBalanceModes;
+  console.log(' Modes ::'+modes);
+  if(modes.indexOf(value) > -1)
+    this.mozCamera.whiteBalanceMode  = value;
+};
+/**
+* configure scene mode value 
+*@ parameter value to set in scene mode
+**/
+Camera.prototype.configureSceneMode = function(value){
+    var modes =  this.mozCamera.capabilities.sceneModes;
+    if(modes.indexOf(value) > -1)
+    this.mozCamera.sceneMode  = value;
+};
+/**
+* configure self timer 
+*@ parameter value to set in scene mode
+**/
+Camera.prototype.configureSelfTimer = function(timer){
+  this.set('selftimer',timer);
+};
+/**
+*set grid view is on/off
+*
+**/
+Camera.prototype.configureGridPreview = function(value){
+  this.set('gridpreview',value);
+};
+
+/**
+*set touch focus using the
+*coordinated of preview buffer
+**/
+Camera.prototype.setTouchFocus = function(x, y, done) {
+  // view port size
+  var deviceIndependentViewportSize = {
+      width: document.body.clientHeight,
+      height: document.body.clientWidth
+  };
+
+
+ // find scale ratio
+  var sw = this.previewSize.width / deviceIndependentViewportSize.width;
+  var sh = this.previewSize.height / deviceIndependentViewportSize.height;
+
+  // Apply scaling on each
+  // row and column
+  var px = x * sh;
+  var py = y * sw;
+
+  // set left, right, top, bottom
+  // of focus ROI
+  var side_of_ROI = FOCUS_ROI_SIZE / 2;
+  var _left = px - side_of_ROI;
+  var _right = px + side_of_ROI;
+  var _top = py - side_of_ROI;
+  var _bottom = py + side_of_ROI;
+
+  // set focus area
+  this.mozCamera.focusAreas = [
+    {top: _top, bottom: _bottom, left: _left, right: _right, weight: 1}
+    ];
+
+  // set metering area
+  this.mozCamera.meteringAreas = [
+    {top: _top, bottom: _bottom, left: _left, right: _right, weight: 1}
+    ];
+
+  // Once focus and metering areas are set,
+  // start focusing to that area by calling
+  // autofocus
+  this.setAutoFocus(done);
+};
+
+/**
+*once touch focus is done
+*clear the ring UI
+**/
+Camera.prototype.clearFocusRing = function() {
+  var self = this;
+  setTimeout(function() {
+  self.set('focus', 'none');
+  }, 1000);
 };
 
 });

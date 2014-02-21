@@ -1,0 +1,1613 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'rebuild' ]
+2 info using npm@1.1.69
+3 info using node@v0.8.16
+4 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/package.json
+5 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/chai/package.json
+6 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/package.json
+7 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/package.json
+8 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-settings-api/package.json
+9 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/package.json
+10 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-contrib-clean/package.json
+11 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/watch/package.json
+12 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers/package.json
+13 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/package.json
+14 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-helper/package.json
+15 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ejs/package.json
+16 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/adm-zip/package.json
+17 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/package.json
+18 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/empty-port/package.json
+19 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/fe.js/package.json
+20 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dateformat/package.json
+21 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/package.json
+22 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/rimraf/package.json
+23 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/package.json
+24 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/package.json
+25 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-content-script/package.json
+26 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/package.json
+27 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/async/package.json
+28 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/debug/package.json
+29 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/package.json
+30 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/package.json
+31 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-jsdoc/package.json
+32 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/package.json
+33 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/package.json
+34 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-file-manager/package.json
+35 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/q/package.json
+36 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/package.json
+37 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/package.json
+38 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-apps/package.json
+39 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/moment/package.json
+40 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-json-proxy/package.json
+41 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-device-host/package.json
+42 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/proxyquire/package.json
+43 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch/package.json
+44 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/underscore/package.json
+45 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/shelljs/package.json
+46 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/package.json
+47 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/console-browserify/package.json
+48 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli/package.json
+49 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/lodash/package.json
+50 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/exit/package.json
+51 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch/package.json
+52 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/getobject/package.json
+53 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/colors/package.json
+54 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/findup-sync/package.json
+55 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/dateformat/package.json
+56 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/rimraf/package.json
+57 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/eventemitter2/package.json
+58 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/async/package.json
+59 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/package.json
+60 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob/package.json
+61 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/hooker/package.json
+62 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/underscore.string/package.json
+63 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/coffee-script/package.json
+64 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/which/package.json
+65 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/iconv-lite/package.json
+66 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/nopt/package.json
+67 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/node-uuid/package.json
+68 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/forever-agent/package.json
+69 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/aws-sign2/package.json
+70 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/qs/package.json
+71 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/json-stringify-safe/package.json
+72 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/package.json
+73 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/mime/package.json
+74 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tunnel-agent/package.json
+75 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/oauth-sign/package.json
+76 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data/package.json
+77 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tough-cookie/package.json
+78 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/package.json
+79 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers/node_modules/json-wire-protocol/package.json
+80 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/json-wire-protocol/package.json
+81 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/socket-retry-connect/package.json
+82 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/debug/package.json
+83 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/sockit-to-me/package.json
+84 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/package.json
+85 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/package.json
+86 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/package.json
+87 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/intersect/package.json
+88 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-js-logger/package.json
+89 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/array-difference/package.json
+90 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-b2gdesktop-host/package.json
+91 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/commander/package.json
+92 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/package.json
+93 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/package.json
+94 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/package.json
+95 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/mkdirp/package.json
+96 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/each-async/package.json
+97 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/node_modules/append/package.json
+98 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/node_modules/commander/package.json
+99 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/tmp/package.json
+100 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/package.json
+101 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/ncp/package.json
+102 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/commander/package.json
+103 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/dmg/package.json
+104 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/colors/package.json
+105 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/mime/package.json
+106 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist/package.json
+107 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade/package.json
+108 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/diff/package.json
+109 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/package.json
+110 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/mkdirp/package.json
+111 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/growl/package.json
+112 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/commander/package.json
+113 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/ref-prebuilt/package.json
+114 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/ref-struct-prebuilt/package.json
+115 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/bindings/package.json
+116 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch/node_modules/sigmund/package.json
+117 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/package.json
+118 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/package.json
+119 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domhandler/package.json
+120 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domutils/package.json
+121 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domelementtype/package.json
+122 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli/node_modules/glob/package.json
+123 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/package.json
+124 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/package.json
+125 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/package.json
+126 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/rimraf/node_modules/graceful-fs/package.json
+127 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/package.json
+128 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/package.json
+129 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/package.json
+130 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob/node_modules/inherits/package.json
+131 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/nopt/node_modules/abbrev/package.json
+132 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/boom/package.json
+133 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/sntp/package.json
+134 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/hoek/package.json
+135 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json
+136 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json
+137 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tough-cookie/node_modules/punycode/package.json
+138 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/assert-plus/package.json
+139 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/ctype/package.json
+140 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/asn1/package.json
+141 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers/node_modules/json-wire-protocol/node_modules/eventemitter2/package.json
+142 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/json-wire-protocol/node_modules/eventemitter2/package.json
+143 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/json-wire-protocol/package.json
+144 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/socket-retry-connect/package.json
+145 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/debug/package.json
+146 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/sockit-to-me/package.json
+147 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/jade/package.json
+148 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/diff/package.json
+149 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/ms/package.json
+150 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/package.json
+151 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/mkdirp/package.json
+152 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/growl/package.json
+153 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/commander/package.json
+154 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/tmp/package.json
+155 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/traverse-directory/package.json
+156 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/package.json
+157 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/package.json
+158 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/package.json
+159 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-js-logger/node_modules/non-native-websocket/package.json
+160 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-b2gdesktop-host/node_modules/mozilla-runner/package.json
+161 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/commander/node_modules/keypress/package.json
+162 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/node-uuid/package.json
+163 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/forever-agent/package.json
+164 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/qs/package.json
+165 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/json-stringify-safe/package.json
+166 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/package.json
+167 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/mime/package.json
+168 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/tunnel-agent/package.json
+169 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/aws-sign/package.json
+170 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/oauth-sign/package.json
+171 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data/package.json
+172 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/cookie-jar/package.json
+173 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/package.json
+174 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/readable-stream/package.json
+175 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/package.json
+176 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tempfile/package.json
+177 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/mout/package.json
+178 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/package.json
+179 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/stream-combiner/package.json
+180 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/package.json
+181 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist/node_modules/wordwrap/package.json
+182 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist/node_modules/minimist/package.json
+183 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade/node_modules/mkdirp/package.json
+184 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade/node_modules/commander/package.json
+185 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch/package.json
+186 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/package.json
+187 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/inherits/package.json
+188 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder/package.json
+189 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/inherits/package.json
+190 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/package.json
+191 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/package.json
+192 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json
+193 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/json-wire-protocol/node_modules/eventemitter2/package.json
+194 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/jade/node_modules/mkdirp/package.json
+195 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch/package.json
+196 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/package.json
+197 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/inherits/package.json
+198 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/traverse-directory/node_modules/graceful-fs/package.json
+199 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/package.json
+200 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/package.json
+201 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/package.json
+202 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/mkdirp/package.json
+203 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/ncp/package.json
+204 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/jsonfile/package.json
+205 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/boom/package.json
+206 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/sntp/package.json
+207 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/hoek/package.json
+208 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json
+209 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json
+210 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/assert-plus/package.json
+211 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/ctype/package.json
+212 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/asn1/package.json
+213 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/readable-stream/node_modules/string_decoder/package.json
+214 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/is-object/package.json
+215 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/package.json
+216 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tempfile/node_modules/uuid/package.json
+217 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/fstream/package.json
+218 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/block-stream/package.json
+219 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/inherits/package.json
+220 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/stream-combiner/node_modules/duplexer/package.json
+221 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/package.json
+222 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/parse-listing/package.json
+223 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json
+224 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json
+225 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json
+226 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json
+227 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch/package.json
+228 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/readable-stream/package.json
+229 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/iconv-lite/package.json
+230 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/chainsaw/package.json
+231 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/hashish/package.json
+232 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json
+233 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/is/package.json
+234 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/foreach/package.json
+235 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/indexof/package.json
+236 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/fstream/node_modules/graceful-fs/package.json
+237 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/from/package.json
+238 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/duplexer/package.json
+239 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/map-stream/package.json
+240 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/through/package.json
+241 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/pause-stream/package.json
+242 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/stream-combiner/package.json
+243 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/split/package.json
+244 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch/node_modules/sigmund/package.json
+245 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/package.json
+246 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/readable-stream/node_modules/string_decoder/package.json
+247 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/chainsaw/node_modules/traverse/package.json
+248 verbose read json /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/hashish/node_modules/traverse/package.json
+249 verbose readInstalled returning chai@1.4.2
+250 verbose readInstalled returning marionette-settings-api@0.1.0
+251 verbose readInstalled returning grunt-contrib-clean@0.5.0
+252 verbose readInstalled returning watch@0.9.0
+253 verbose readInstalled returning marionette-helper@0.2.1
+254 verbose readInstalled returning ejs@0.8.4
+255 verbose readInstalled returning adm-zip@0.4.3
+256 verbose readInstalled returning empty-port@0.0.1
+257 verbose readInstalled returning fe.js@0.1.4
+258 verbose readInstalled returning dateformat@1.0.6-1.2.3
+259 verbose readInstalled returning rimraf@2.2.5
+260 verbose readInstalled returning marionette-content-script@0.0.3
+261 verbose readInstalled returning async@0.2.9
+262 verbose readInstalled returning debug@0.7.4
+263 verbose readInstalled returning grunt-jsdoc@0.5.1
+264 verbose readInstalled returning marionette-file-manager@0.0.2
+265 verbose readInstalled returning q@0.9.7
+266 verbose readInstalled returning marionette-apps@0.3.3
+267 verbose readInstalled returning moment@2.4.0
+268 verbose readInstalled returning mocha-json-proxy@0.0.7
+269 verbose readInstalled returning marionette-device-host@0.0.2
+270 verbose readInstalled returning proxyquire@0.4.1
+271 verbose readInstalled returning dive@0.3.0
+272 verbose readInstalled returning travis-project-jobs@0.0.1
+273 verbose readInstalled returning ffi-prebuilt@1.2.9
+274 verbose readInstalled returning mail-fakeservers@0.0.14
+275 verbose readInstalled returning marionette-client@1.1.0
+276 verbose readInstalled returning marionette-js-runner@0.4.3
+277 verbose readInstalled returning node-static@0.6.9
+278 verbose readInstalled returning jshint@2.4.2
+279 verbose readInstalled returning grunt@0.4.2
+280 verbose readInstalled returning request@2.33.0
+281 verbose readInstalled returning marionette-plugin-forms@0.0.1
+282 verbose readInstalled returning mocha@1.15.0
+283 verbose readInstalled returning mocha-tbpl-reporter@0.0.6
+284 verbose readInstalled returning download@0.1.7
+285 verbose readInstalled returning mozilla-download@0.4.1
+286 verbose readInstalled returning marionette-profile-builder@0.0.3
+287 verbose readInstalled returning undefined
+288 verbose readInstalled returning undefined
+289 verbose readInstalled returning undefined
+290 verbose readInstalled returning append@0.1.1
+291 verbose readInstalled returning commander@2.0.0
+292 verbose readInstalled returning bindings@1.1.1
+293 verbose readInstalled returning ref-prebuilt@0.1.3
+294 verbose readInstalled returning ref-struct-prebuilt@0.0.5
+295 verbose readInstalled returning json-wire-protocol@0.2.1
+296 verbose readInstalled returning eventemitter2@0.4.13
+297 verbose readInstalled returning debug@0.6.0
+298 verbose readInstalled returning json-wire-protocol@0.2.1
+299 verbose readInstalled returning socket-retry-connect@0.0.1
+300 verbose readInstalled returning sockit-to-me@0.1.8
+301 verbose readInstalled returning eventemitter2@0.4.13
+302 verbose readInstalled returning array-difference@0.0.1
+303 verbose readInstalled returning commander@1.3.2
+304 verbose readInstalled returning intersect@0.0.3
+305 verbose readInstalled returning marionette-b2gdesktop-host@0.7.1
+306 verbose readInstalled returning marionette-js-logger@0.1.2-non-native
+307 verbose readInstalled returning keypress@0.1.0
+308 verbose readInstalled returning mozilla-runner@0.3.0
+309 verbose readInstalled returning non-native-websocket@0.0.1
+310 verbose readInstalled returning mozilla-profile-builder@0.4.0
+311 verbose readInstalled returning tmp@0.0.23
+312 verbose readInstalled returning remove@0.1.5
+313 verbose readInstalled returning packaged-webapp@0.1.2
+314 verbose readInstalled returning traverse-directory@0.1.0
+315 verbose readInstalled returning fs-extra@0.8.1
+316 verbose readInstalled returning seq@0.3.5
+317 verbose readInstalled returning chainsaw@0.0.9
+318 verbose readInstalled returning hashish@0.0.4
+319 verbose readInstalled returning traverse@0.3.9
+320 verbose readInstalled returning traverse@0.6.6
+321 verbose readInstalled returning archiver@0.4.10
+322 verbose readInstalled returning readdirp@0.2.5
+323 verbose readInstalled returning readable-stream@1.0.25
+324 verbose readInstalled returning iconv-lite@0.2.11
+325 verbose readInstalled returning string_decoder@0.10.25-1
+326 verbose readInstalled returning minimatch@0.2.14
+327 verbose readInstalled returning lru-cache@2.5.0
+328 verbose readInstalled returning sigmund@1.0.0
+329 verbose readInstalled returning graceful-fs@2.0.2
+330 verbose readInstalled returning ncp@0.4.2
+331 verbose readInstalled returning mkdirp@0.3.5
+332 verbose readInstalled returning jsonfile@1.1.1
+333 verbose readInstalled returning optimist@0.6.1
+334 verbose readInstalled returning colors@0.6.2
+335 verbose readInstalled returning mime@1.2.11
+336 verbose readInstalled returning wordwrap@0.0.2
+337 verbose readInstalled returning minimist@0.0.7
+338 verbose readInstalled returning shelljs@0.1.4
+339 verbose readInstalled returning underscore@1.4.4
+340 verbose readInstalled returning cli@0.4.5
+341 verbose readInstalled returning minimatch@0.2.14
+342 verbose readInstalled returning htmlparser2@3.3.0
+343 verbose readInstalled returning console-browserify@0.1.6
+344 verbose readInstalled returning glob@3.2.8
+345 verbose readInstalled returning inherits@2.0.1
+346 verbose readInstalled returning lru-cache@2.5.0
+347 verbose readInstalled returning sigmund@1.0.0
+348 verbose readInstalled returning domhandler@2.1.0
+349 verbose readInstalled returning domutils@1.1.6
+350 verbose readInstalled returning domelementtype@1.1.1
+351 verbose readInstalled returning readable-stream@1.0.25
+352 verbose readInstalled returning string_decoder@0.10.25-1
+353 verbose readInstalled returning async@0.1.22
+354 verbose readInstalled returning coffee-script@1.3.3
+355 verbose readInstalled returning colors@0.6.2
+356 verbose readInstalled returning dateformat@1.0.2-1.2.3
+357 verbose readInstalled returning eventemitter2@0.4.13
+358 verbose readInstalled returning findup-sync@0.1.2
+359 verbose readInstalled returning glob@3.1.21
+360 verbose readInstalled returning hooker@0.2.3
+361 verbose readInstalled returning iconv-lite@0.2.11
+362 verbose readInstalled returning minimatch@0.2.14
+363 verbose readInstalled returning nopt@1.0.10
+364 verbose readInstalled returning rimraf@2.0.3
+365 verbose readInstalled returning lodash@0.9.2
+366 verbose readInstalled returning underscore.string@2.2.1
+367 verbose readInstalled returning which@1.0.5
+368 verbose readInstalled returning js-yaml@2.0.5
+369 verbose readInstalled returning exit@0.1.2
+370 verbose readInstalled returning getobject@0.1.0
+371 verbose readInstalled returning lodash@1.0.1
+372 verbose readInstalled returning graceful-fs@1.2.3
+373 verbose readInstalled returning inherits@1.0.0
+374 verbose readInstalled returning lru-cache@2.5.0
+375 verbose readInstalled returning sigmund@1.0.0
+376 verbose readInstalled returning abbrev@1.0.4
+377 verbose readInstalled returning graceful-fs@1.1.14
+378 verbose readInstalled returning argparse@0.1.15
+379 verbose readInstalled returning esprima@1.0.4
+380 verbose readInstalled returning underscore@1.4.4
+381 verbose readInstalled returning underscore.string@2.3.3
+382 verbose readInstalled returning qs@0.6.6
+383 verbose readInstalled returning json-stringify-safe@5.0.0
+384 verbose readInstalled returning forever-agent@0.5.2
+385 verbose readInstalled returning node-uuid@1.4.1
+386 verbose readInstalled returning mime@1.2.11
+387 verbose readInstalled returning tough-cookie@0.12.1
+388 verbose readInstalled returning form-data@0.1.2
+389 verbose readInstalled returning tunnel-agent@0.3.0
+390 verbose readInstalled returning http-signature@0.10.0
+391 verbose readInstalled returning oauth-sign@0.3.0
+392 verbose readInstalled returning hawk@1.0.0
+393 verbose readInstalled returning aws-sign2@0.5.0
+394 verbose readInstalled returning punycode@1.2.4
+395 verbose readInstalled returning combined-stream@0.0.4
+396 verbose readInstalled returning delayed-stream@0.0.5
+397 verbose readInstalled returning assert-plus@0.1.2
+398 verbose readInstalled returning asn1@0.1.11
+399 verbose readInstalled returning ctype@0.5.2
+400 verbose readInstalled returning hoek@0.9.1
+401 verbose readInstalled returning boom@0.4.2
+402 verbose readInstalled returning cryptiles@0.2.2
+403 verbose readInstalled returning sntp@0.2.4
+404 verbose readInstalled returning marionette-client@0.13.4
+405 verbose readInstalled returning debug@0.6.0
+406 verbose readInstalled returning json-wire-protocol@0.2.1
+407 verbose readInstalled returning socket-retry-connect@0.0.1
+408 verbose readInstalled returning sockit-to-me@0.1.8
+409 verbose readInstalled returning eventemitter2@0.4.13
+410 verbose readInstalled returning commander@2.0.0
+411 verbose readInstalled returning growl@1.7.0
+412 verbose readInstalled returning jade@0.26.3
+413 verbose readInstalled returning diff@1.0.7
+414 verbose readInstalled returning mkdirp@0.3.5
+415 verbose readInstalled returning glob@3.2.3
+416 verbose readInstalled returning commander@0.6.1
+417 verbose readInstalled returning mkdirp@0.3.0
+418 verbose readInstalled returning minimatch@0.2.14
+419 verbose readInstalled returning graceful-fs@2.0.2
+420 verbose readInstalled returning inherits@2.0.1
+421 verbose readInstalled returning lru-cache@2.5.0
+422 verbose readInstalled returning sigmund@1.0.0
+423 verbose readInstalled returning mocha@1.12.0
+424 verbose readInstalled returning commander@0.6.1
+425 verbose readInstalled returning growl@1.7.0
+426 verbose readInstalled returning jade@0.26.3
+427 verbose readInstalled returning diff@1.0.2
+428 verbose readInstalled returning mkdirp@0.3.5
+429 verbose readInstalled returning ms@0.3.0
+430 verbose readInstalled returning glob@3.2.1
+431 verbose readInstalled returning mkdirp@0.3.0
+432 verbose readInstalled returning minimatch@0.2.14
+433 verbose readInstalled returning graceful-fs@1.2.3
+434 verbose readInstalled returning inherits@1.0.0
+435 verbose readInstalled returning lru-cache@2.5.0
+436 verbose readInstalled returning sigmund@1.0.0
+437 verbose readInstalled returning decompress@0.1.6
+438 verbose readInstalled returning each-async@0.1.2
+439 verbose readInstalled returning mkdirp@0.3.5
+440 verbose readInstalled returning request@2.25.0
+441 verbose readInstalled returning through2@0.1.0
+442 verbose readInstalled returning mout@0.6.0
+443 verbose readInstalled returning stream-combiner@0.0.4
+444 verbose readInstalled returning tar@0.1.19
+445 verbose readInstalled returning tempfile@0.1.2
+446 verbose readInstalled returning duplexer@0.1.1
+447 verbose readInstalled returning inherits@2.0.1
+448 verbose readInstalled returning block-stream@0.0.7
+449 verbose readInstalled returning fstream@0.1.25
+450 verbose readInstalled returning graceful-fs@2.0.2
+451 verbose readInstalled returning uuid@1.4.1
+452 verbose readInstalled returning qs@0.6.6
+453 verbose readInstalled returning json-stringify-safe@5.0.0
+454 verbose readInstalled returning forever-agent@0.5.2
+455 verbose readInstalled returning tunnel-agent@0.3.0
+456 verbose readInstalled returning http-signature@0.10.0
+457 verbose readInstalled returning hawk@1.0.0
+458 verbose readInstalled returning aws-sign@0.3.0
+459 verbose readInstalled returning oauth-sign@0.3.0
+460 verbose readInstalled returning cookie-jar@0.3.0
+461 verbose readInstalled returning node-uuid@1.4.1
+462 verbose readInstalled returning mime@1.2.11
+463 verbose readInstalled returning form-data@0.1.2
+464 verbose readInstalled returning assert-plus@0.1.2
+465 verbose readInstalled returning asn1@0.1.11
+466 verbose readInstalled returning ctype@0.5.2
+467 verbose readInstalled returning hoek@0.9.1
+468 verbose readInstalled returning boom@0.4.2
+469 verbose readInstalled returning cryptiles@0.2.2
+470 verbose readInstalled returning sntp@0.2.4
+471 verbose readInstalled returning combined-stream@0.0.4
+472 verbose readInstalled returning delayed-stream@0.0.5
+473 verbose readInstalled returning readable-stream@1.0.25
+474 verbose readInstalled returning xtend@2.0.6
+475 verbose readInstalled returning string_decoder@0.10.25-1
+476 verbose readInstalled returning is-object@0.1.2
+477 verbose readInstalled returning object-keys@0.2.0
+478 verbose readInstalled returning foreach@2.0.4
+479 verbose readInstalled returning indexof@0.0.1
+480 verbose readInstalled returning is@0.2.7
+481 verbose readInstalled returning mozilla-get-url@0.2.0
+482 verbose readInstalled returning dmg@0.0.3
+483 verbose readInstalled returning tmp@0.0.23
+484 verbose readInstalled returning ncp@0.4.2
+485 verbose readInstalled returning commander@2.0.0
+486 verbose readInstalled returning jsftp@1.1.1
+487 verbose readInstalled returning event-stream@3.0.20
+488 verbose readInstalled returning parse-listing@1.0.1
+489 verbose readInstalled returning through@2.3.4
+490 verbose readInstalled returning duplexer@0.1.1
+491 verbose readInstalled returning from@0.1.3
+492 verbose readInstalled returning map-stream@0.0.4
+493 verbose readInstalled returning pause-stream@0.0.11
+494 verbose readInstalled returning split@0.2.10
+495 verbose readInstalled returning stream-combiner@0.0.4
+496 info readInstalled object
+497 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia', 'gaia@0.0.2' ]
+498 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/chai',
+498 verbose rebuild   'chai@1.4.2' ]
+499 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-settings-api',
+499 verbose rebuild   'marionette-settings-api@0.1.0' ]
+500 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-contrib-clean',
+500 verbose rebuild   'grunt-contrib-clean@0.5.0' ]
+501 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/rimraf',
+501 verbose rebuild   'rimraf@2.2.5' ]
+502 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/watch',
+502 verbose rebuild   'watch@0.9.0' ]
+503 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-helper',
+503 verbose rebuild   'marionette-helper@0.2.1' ]
+504 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-apps',
+504 verbose rebuild   'marionette-apps@0.3.3' ]
+505 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ejs',
+505 verbose rebuild   'ejs@0.8.4' ]
+506 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/adm-zip',
+506 verbose rebuild   'adm-zip@0.4.3' ]
+507 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/empty-port',
+507 verbose rebuild   'empty-port@0.0.1' ]
+508 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/fe.js',
+508 verbose rebuild   'fe.js@0.1.4' ]
+509 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dateformat',
+509 verbose rebuild   'dateformat@1.0.6-1.2.3' ]
+510 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-content-script',
+510 verbose rebuild   'marionette-content-script@0.0.3' ]
+511 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/async',
+511 verbose rebuild   'async@0.2.9' ]
+512 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/debug',
+512 verbose rebuild   'debug@0.7.4' ]
+513 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-jsdoc',
+513 verbose rebuild   'grunt-jsdoc@0.5.1' ]
+514 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-file-manager',
+514 verbose rebuild   'marionette-file-manager@0.0.2' ]
+515 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/q',
+515 verbose rebuild   'q@0.9.7' ]
+516 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/moment',
+516 verbose rebuild   'moment@2.4.0' ]
+517 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-json-proxy',
+517 verbose rebuild   'mocha-json-proxy@0.0.7' ]
+518 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-device-host',
+518 verbose rebuild   'marionette-device-host@0.0.2' ]
+519 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/proxyquire',
+519 verbose rebuild   'proxyquire@0.4.1' ]
+520 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive',
+520 verbose rebuild   'dive@0.3.0' ]
+521 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/node_modules/append',
+521 verbose rebuild   'append@0.1.1' ]
+522 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs',
+522 verbose rebuild   'travis-project-jobs@0.0.1' ]
+523 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/node_modules/commander',
+523 verbose rebuild   'commander@2.0.0' ]
+524 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt',
+524 verbose rebuild   'ffi-prebuilt@1.2.9' ]
+525 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/bindings',
+525 verbose rebuild   'bindings@1.1.1' ]
+526 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/ref-prebuilt',
+526 verbose rebuild   'ref-prebuilt@0.1.3' ]
+527 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/ref-struct-prebuilt',
+527 verbose rebuild   'ref-struct-prebuilt@0.0.5' ]
+528 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers',
+528 verbose rebuild   'mail-fakeservers@0.0.14' ]
+529 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers/node_modules/json-wire-protocol',
+529 verbose rebuild   'json-wire-protocol@0.2.1' ]
+530 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers/node_modules/json-wire-protocol/node_modules/eventemitter2',
+530 verbose rebuild   'eventemitter2@0.4.13' ]
+531 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client',
+531 verbose rebuild   'marionette-client@1.1.0' ]
+532 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/debug',
+532 verbose rebuild   'debug@0.6.0' ]
+533 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/json-wire-protocol',
+533 verbose rebuild   'json-wire-protocol@0.2.1' ]
+534 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/json-wire-protocol/node_modules/eventemitter2',
+534 verbose rebuild   'eventemitter2@0.4.13' ]
+535 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/socket-retry-connect',
+535 verbose rebuild   'socket-retry-connect@0.0.1' ]
+536 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/sockit-to-me',
+536 verbose rebuild   'sockit-to-me@0.1.8' ]
+537 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner',
+537 verbose rebuild   'marionette-js-runner@0.4.3' ]
+538 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/array-difference',
+538 verbose rebuild   'array-difference@0.0.1' ]
+539 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/commander',
+539 verbose rebuild   'commander@1.3.2' ]
+540 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/commander/node_modules/keypress',
+540 verbose rebuild   'keypress@0.1.0' ]
+541 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/intersect',
+541 verbose rebuild   'intersect@0.0.3' ]
+542 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-b2gdesktop-host',
+542 verbose rebuild   'marionette-b2gdesktop-host@0.7.1' ]
+543 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-b2gdesktop-host/node_modules/mozilla-runner',
+543 verbose rebuild   'mozilla-runner@0.3.0' ]
+544 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-js-logger',
+544 verbose rebuild   'marionette-js-logger@0.1.2-non-native' ]
+545 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-js-logger/node_modules/non-native-websocket',
+545 verbose rebuild   'non-native-websocket@0.0.1' ]
+546 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder',
+546 verbose rebuild   'marionette-profile-builder@0.0.3' ]
+547 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder',
+547 verbose rebuild   'mozilla-profile-builder@0.4.0' ]
+548 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/tmp',
+548 verbose rebuild   'tmp@0.0.23' ]
+549 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove',
+549 verbose rebuild   'remove@0.1.5' ]
+550 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq',
+550 verbose rebuild   'seq@0.3.5' ]
+551 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/chainsaw',
+551 verbose rebuild   'chainsaw@0.0.9' ]
+552 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/chainsaw/node_modules/traverse',
+552 verbose rebuild   'traverse@0.3.9' ]
+553 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/hashish',
+553 verbose rebuild   'hashish@0.0.4' ]
+554 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/hashish/node_modules/traverse',
+554 verbose rebuild   'traverse@0.6.6' ]
+555 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp',
+555 verbose rebuild   'packaged-webapp@0.1.2' ]
+556 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver',
+556 verbose rebuild   'archiver@0.4.10' ]
+557 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/readable-stream',
+557 verbose rebuild   'readable-stream@1.0.25' ]
+558 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/readable-stream/node_modules/string_decoder',
+558 verbose rebuild   'string_decoder@0.10.25-1' ]
+559 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/iconv-lite',
+559 verbose rebuild   'iconv-lite@0.2.11' ]
+560 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp',
+560 verbose rebuild   'readdirp@0.2.5' ]
+561 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch',
+561 verbose rebuild   'minimatch@0.2.14' ]
+562 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache',
+562 verbose rebuild   'lru-cache@2.5.0' ]
+563 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch/node_modules/sigmund',
+563 verbose rebuild   'sigmund@1.0.0' ]
+564 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/traverse-directory',
+564 verbose rebuild   'traverse-directory@0.1.0' ]
+565 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/traverse-directory/node_modules/graceful-fs',
+565 verbose rebuild   'graceful-fs@2.0.2' ]
+566 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra',
+566 verbose rebuild   'fs-extra@0.8.1' ]
+567 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/ncp',
+567 verbose rebuild   'ncp@0.4.2' ]
+568 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/mkdirp',
+568 verbose rebuild   'mkdirp@0.3.5' ]
+569 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/jsonfile',
+569 verbose rebuild   'jsonfile@1.1.1' ]
+570 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static',
+570 verbose rebuild   'node-static@0.6.9' ]
+571 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist',
+571 verbose rebuild   'optimist@0.6.1' ]
+572 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist/node_modules/wordwrap',
+572 verbose rebuild   'wordwrap@0.0.2' ]
+573 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist/node_modules/minimist',
+573 verbose rebuild   'minimist@0.0.7' ]
+574 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/colors',
+574 verbose rebuild   'colors@0.6.2' ]
+575 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/mime',
+575 verbose rebuild   'mime@1.2.11' ]
+576 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint',
+576 verbose rebuild   'jshint@2.4.2' ]
+577 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/shelljs',
+577 verbose rebuild   'shelljs@0.1.4' ]
+578 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/underscore',
+578 verbose rebuild   'underscore@1.4.4' ]
+579 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli',
+579 verbose rebuild   'cli@0.4.5' ]
+580 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli/node_modules/glob',
+580 verbose rebuild   'glob@3.2.8' ]
+581 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch',
+581 verbose rebuild   'minimatch@0.2.14' ]
+582 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache',
+582 verbose rebuild   'lru-cache@2.5.0' ]
+583 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch/node_modules/sigmund',
+583 verbose rebuild   'sigmund@1.0.0' ]
+584 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/inherits',
+584 verbose rebuild   'inherits@2.0.1' ]
+585 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2',
+585 verbose rebuild   'htmlparser2@3.3.0' ]
+586 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domhandler',
+586 verbose rebuild   'domhandler@2.1.0' ]
+587 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domelementtype',
+587 verbose rebuild   'domelementtype@1.1.1' ]
+588 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domutils',
+588 verbose rebuild   'domutils@1.1.6' ]
+589 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream',
+589 verbose rebuild   'readable-stream@1.0.25' ]
+590 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder',
+590 verbose rebuild   'string_decoder@0.10.25-1' ]
+591 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/console-browserify',
+591 verbose rebuild   'console-browserify@0.1.6' ]
+592 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt',
+592 verbose rebuild   'grunt@0.4.2' ]
+593 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/async',
+593 verbose rebuild   'async@0.1.22' ]
+594 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/coffee-script',
+594 verbose rebuild   'coffee-script@1.3.3' ]
+595 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/colors',
+595 verbose rebuild   'colors@0.6.2' ]
+596 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/dateformat',
+596 verbose rebuild   'dateformat@1.0.2-1.2.3' ]
+597 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/eventemitter2',
+597 verbose rebuild   'eventemitter2@0.4.13' ]
+598 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/findup-sync',
+598 verbose rebuild   'findup-sync@0.1.2' ]
+599 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob',
+599 verbose rebuild   'glob@3.1.21' ]
+600 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch',
+600 verbose rebuild   'minimatch@0.2.14' ]
+601 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache',
+601 verbose rebuild   'lru-cache@2.5.0' ]
+602 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch/node_modules/sigmund',
+602 verbose rebuild   'sigmund@1.0.0' ]
+603 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob/node_modules/graceful-fs',
+603 verbose rebuild   'graceful-fs@1.2.3' ]
+604 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob/node_modules/inherits',
+604 verbose rebuild   'inherits@1.0.0' ]
+605 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/findup-sync/node_modules/lodash',
+605 verbose rebuild   'lodash@1.0.1' ]
+606 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/hooker',
+606 verbose rebuild   'hooker@0.2.3' ]
+607 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/iconv-lite',
+607 verbose rebuild   'iconv-lite@0.2.11' ]
+608 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/nopt',
+608 verbose rebuild   'nopt@1.0.10' ]
+609 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/nopt/node_modules/abbrev',
+609 verbose rebuild   'abbrev@1.0.4' ]
+610 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/rimraf',
+610 verbose rebuild   'rimraf@2.0.3' ]
+611 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/rimraf/node_modules/graceful-fs',
+611 verbose rebuild   'graceful-fs@1.1.14' ]
+612 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/lodash',
+612 verbose rebuild   'lodash@0.9.2' ]
+613 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/underscore.string',
+613 verbose rebuild   'underscore.string@2.2.1' ]
+614 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/which',
+614 verbose rebuild   'which@1.0.5' ]
+615 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml',
+615 verbose rebuild   'js-yaml@2.0.5' ]
+616 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse',
+616 verbose rebuild   'argparse@0.1.15' ]
+617 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore',
+617 verbose rebuild   'underscore@1.4.4' ]
+618 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string',
+618 verbose rebuild   'underscore.string@2.3.3' ]
+619 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/esprima',
+619 verbose rebuild   'esprima@1.0.4' ]
+620 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/exit',
+620 verbose rebuild   'exit@0.1.2' ]
+621 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/getobject',
+621 verbose rebuild   'getobject@0.1.0' ]
+622 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request',
+622 verbose rebuild   'request@2.33.0' ]
+623 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/qs',
+623 verbose rebuild   'qs@0.6.6' ]
+624 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/json-stringify-safe',
+624 verbose rebuild   'json-stringify-safe@5.0.0' ]
+625 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/forever-agent',
+625 verbose rebuild   'forever-agent@0.5.2' ]
+626 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/node-uuid',
+626 verbose rebuild   'node-uuid@1.4.1' ]
+627 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/mime',
+627 verbose rebuild   'mime@1.2.11' ]
+628 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tough-cookie',
+628 verbose rebuild   'tough-cookie@0.12.1' ]
+629 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tough-cookie/node_modules/punycode',
+629 verbose rebuild   'punycode@1.2.4' ]
+630 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data',
+630 verbose rebuild   'form-data@0.1.2' ]
+631 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data/node_modules/combined-stream',
+631 verbose rebuild   'combined-stream@0.0.4' ]
+632 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream',
+632 verbose rebuild   'delayed-stream@0.0.5' ]
+633 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tunnel-agent',
+633 verbose rebuild   'tunnel-agent@0.3.0' ]
+634 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature',
+634 verbose rebuild   'http-signature@0.10.0' ]
+635 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/assert-plus',
+635 verbose rebuild   'assert-plus@0.1.2' ]
+636 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/asn1',
+636 verbose rebuild   'asn1@0.1.11' ]
+637 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/ctype',
+637 verbose rebuild   'ctype@0.5.2' ]
+638 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/oauth-sign',
+638 verbose rebuild   'oauth-sign@0.3.0' ]
+639 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk',
+639 verbose rebuild   'hawk@1.0.0' ]
+640 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/hoek',
+640 verbose rebuild   'hoek@0.9.1' ]
+641 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/boom',
+641 verbose rebuild   'boom@0.4.2' ]
+642 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/cryptiles',
+642 verbose rebuild   'cryptiles@0.2.2' ]
+643 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/sntp',
+643 verbose rebuild   'sntp@0.2.4' ]
+644 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/aws-sign2',
+644 verbose rebuild   'aws-sign2@0.5.0' ]
+645 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms',
+645 verbose rebuild   'marionette-plugin-forms@0.0.1' ]
+646 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client',
+646 verbose rebuild   'marionette-client@0.13.4' ]
+647 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/debug',
+647 verbose rebuild   'debug@0.6.0' ]
+648 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/json-wire-protocol',
+648 verbose rebuild   'json-wire-protocol@0.2.1' ]
+649 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/json-wire-protocol/node_modules/eventemitter2',
+649 verbose rebuild   'eventemitter2@0.4.13' ]
+650 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/socket-retry-connect',
+650 verbose rebuild   'socket-retry-connect@0.0.1' ]
+651 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/sockit-to-me',
+651 verbose rebuild   'sockit-to-me@0.1.8' ]
+652 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha',
+652 verbose rebuild   'mocha@1.15.0' ]
+653 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/commander',
+653 verbose rebuild   'commander@2.0.0' ]
+654 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/growl',
+654 verbose rebuild   'growl@1.7.0' ]
+655 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade',
+655 verbose rebuild   'jade@0.26.3' ]
+656 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade/node_modules/commander',
+656 verbose rebuild   'commander@0.6.1' ]
+657 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade/node_modules/mkdirp',
+657 verbose rebuild   'mkdirp@0.3.0' ]
+658 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/diff',
+658 verbose rebuild   'diff@1.0.7' ]
+659 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/mkdirp',
+659 verbose rebuild   'mkdirp@0.3.5' ]
+660 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob',
+660 verbose rebuild   'glob@3.2.3' ]
+661 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch',
+661 verbose rebuild   'minimatch@0.2.14' ]
+662 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache',
+662 verbose rebuild   'lru-cache@2.5.0' ]
+663 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund',
+663 verbose rebuild   'sigmund@1.0.0' ]
+664 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/graceful-fs',
+664 verbose rebuild   'graceful-fs@2.0.2' ]
+665 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/inherits',
+665 verbose rebuild   'inherits@2.0.1' ]
+666 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter',
+666 verbose rebuild   'mocha-tbpl-reporter@0.0.6' ]
+667 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha',
+667 verbose rebuild   'mocha@1.12.0' ]
+668 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/commander',
+668 verbose rebuild   'commander@0.6.1' ]
+669 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/growl',
+669 verbose rebuild   'growl@1.7.0' ]
+670 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/jade',
+670 verbose rebuild   'jade@0.26.3' ]
+671 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/jade/node_modules/mkdirp',
+671 verbose rebuild   'mkdirp@0.3.0' ]
+672 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/diff',
+672 verbose rebuild   'diff@1.0.2' ]
+673 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/mkdirp',
+673 verbose rebuild   'mkdirp@0.3.5' ]
+674 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/ms',
+674 verbose rebuild   'ms@0.3.0' ]
+675 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob',
+675 verbose rebuild   'glob@3.2.1' ]
+676 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch',
+676 verbose rebuild   'minimatch@0.2.14' ]
+677 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache',
+677 verbose rebuild   'lru-cache@2.5.0' ]
+678 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund',
+678 verbose rebuild   'sigmund@1.0.0' ]
+679 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/graceful-fs',
+679 verbose rebuild   'graceful-fs@1.2.3' ]
+680 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/inherits',
+680 verbose rebuild   'inherits@1.0.0' ]
+681 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download',
+681 verbose rebuild   'download@0.1.7' ]
+682 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress',
+682 verbose rebuild   'decompress@0.1.6' ]
+683 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/mkdirp',
+683 verbose rebuild   'mkdirp@0.3.5' ]
+684 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/mout',
+684 verbose rebuild   'mout@0.6.0' ]
+685 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/stream-combiner',
+685 verbose rebuild   'stream-combiner@0.0.4' ]
+686 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/stream-combiner/node_modules/duplexer',
+686 verbose rebuild   'duplexer@0.1.1' ]
+687 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar',
+687 verbose rebuild   'tar@0.1.19' ]
+688 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/inherits',
+688 verbose rebuild   'inherits@2.0.1' ]
+689 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/block-stream',
+689 verbose rebuild   'block-stream@0.0.7' ]
+690 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/fstream',
+690 verbose rebuild   'fstream@0.1.25' ]
+691 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/fstream/node_modules/graceful-fs',
+691 verbose rebuild   'graceful-fs@2.0.2' ]
+692 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tempfile',
+692 verbose rebuild   'tempfile@0.1.2' ]
+693 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tempfile/node_modules/uuid',
+693 verbose rebuild   'uuid@1.4.1' ]
+694 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/each-async',
+694 verbose rebuild   'each-async@0.1.2' ]
+695 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request',
+695 verbose rebuild   'request@2.25.0' ]
+696 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/qs',
+696 verbose rebuild   'qs@0.6.6' ]
+697 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/json-stringify-safe',
+697 verbose rebuild   'json-stringify-safe@5.0.0' ]
+698 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/forever-agent',
+698 verbose rebuild   'forever-agent@0.5.2' ]
+699 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/tunnel-agent',
+699 verbose rebuild   'tunnel-agent@0.3.0' ]
+700 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature',
+700 verbose rebuild   'http-signature@0.10.0' ]
+701 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/assert-plus',
+701 verbose rebuild   'assert-plus@0.1.2' ]
+702 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/asn1',
+702 verbose rebuild   'asn1@0.1.11' ]
+703 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/ctype',
+703 verbose rebuild   'ctype@0.5.2' ]
+704 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk',
+704 verbose rebuild   'hawk@1.0.0' ]
+705 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/hoek',
+705 verbose rebuild   'hoek@0.9.1' ]
+706 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/boom',
+706 verbose rebuild   'boom@0.4.2' ]
+707 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/cryptiles',
+707 verbose rebuild   'cryptiles@0.2.2' ]
+708 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/sntp',
+708 verbose rebuild   'sntp@0.2.4' ]
+709 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/aws-sign',
+709 verbose rebuild   'aws-sign@0.3.0' ]
+710 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/oauth-sign',
+710 verbose rebuild   'oauth-sign@0.3.0' ]
+711 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/cookie-jar',
+711 verbose rebuild   'cookie-jar@0.3.0' ]
+712 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/node-uuid',
+712 verbose rebuild   'node-uuid@1.4.1' ]
+713 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/mime',
+713 verbose rebuild   'mime@1.2.11' ]
+714 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data',
+714 verbose rebuild   'form-data@0.1.2' ]
+715 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data/node_modules/combined-stream',
+715 verbose rebuild   'combined-stream@0.0.4' ]
+716 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream',
+716 verbose rebuild   'delayed-stream@0.0.5' ]
+717 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2',
+717 verbose rebuild   'through2@0.1.0' ]
+718 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/readable-stream',
+718 verbose rebuild   'readable-stream@1.0.25' ]
+719 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/readable-stream/node_modules/string_decoder',
+719 verbose rebuild   'string_decoder@0.10.25-1' ]
+720 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend',
+720 verbose rebuild   'xtend@2.0.6' ]
+721 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/is-object',
+721 verbose rebuild   'is-object@0.1.2' ]
+722 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys',
+722 verbose rebuild   'object-keys@0.2.0' ]
+723 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/foreach',
+723 verbose rebuild   'foreach@2.0.4' ]
+724 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/indexof',
+724 verbose rebuild   'indexof@0.0.1' ]
+725 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/is',
+725 verbose rebuild   'is@0.2.7' ]
+726 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download',
+726 verbose rebuild   'mozilla-download@0.4.1' ]
+727 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url',
+727 verbose rebuild   'mozilla-get-url@0.2.0' ]
+728 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp',
+728 verbose rebuild   'jsftp@1.1.1' ]
+729 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream',
+729 verbose rebuild   'event-stream@3.0.20' ]
+730 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/through',
+730 verbose rebuild   'through@2.3.4' ]
+731 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/duplexer',
+731 verbose rebuild   'duplexer@0.1.1' ]
+732 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/from',
+732 verbose rebuild   'from@0.1.3' ]
+733 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/map-stream',
+733 verbose rebuild   'map-stream@0.0.4' ]
+734 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/pause-stream',
+734 verbose rebuild   'pause-stream@0.0.11' ]
+735 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/split',
+735 verbose rebuild   'split@0.2.10' ]
+736 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/stream-combiner',
+736 verbose rebuild   'stream-combiner@0.0.4' ]
+737 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/parse-listing',
+737 verbose rebuild   'parse-listing@1.0.1' ]
+738 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/commander',
+738 verbose rebuild   'commander@2.0.0' ]
+739 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/dmg',
+739 verbose rebuild   'dmg@0.0.3' ]
+740 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/tmp',
+740 verbose rebuild   'tmp@0.0.23' ]
+741 verbose rebuild path, id [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/ncp',
+741 verbose rebuild   'ncp@0.4.2' ]
+742 silly rebuild set [ '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/chai',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-settings-api',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-contrib-clean',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/rimraf',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/watch',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-helper',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-apps',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ejs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/adm-zip',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/empty-port',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/fe.js',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dateformat',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-content-script',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/async',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/debug',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-jsdoc',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-file-manager',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/q',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/moment',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-json-proxy',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-device-host',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/proxyquire',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/node_modules/append',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/node_modules/commander',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/bindings',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/ref-prebuilt',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/node_modules/ref-struct-prebuilt',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers/node_modules/json-wire-protocol',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mail-fakeservers/node_modules/json-wire-protocol/node_modules/eventemitter2',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/debug',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/json-wire-protocol',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/json-wire-protocol/node_modules/eventemitter2',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/socket-retry-connect',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-client/node_modules/sockit-to-me',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/array-difference',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/commander',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/commander/node_modules/keypress',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/intersect',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-b2gdesktop-host',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-b2gdesktop-host/node_modules/mozilla-runner',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-js-logger',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-js-runner/node_modules/marionette-js-logger/node_modules/non-native-websocket',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/tmp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/chainsaw',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/chainsaw/node_modules/traverse',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/hashish',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/remove/node_modules/seq/node_modules/hashish/node_modules/traverse',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/readable-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/readable-stream/node_modules/string_decoder',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/archiver/node_modules/iconv-lite',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/packaged-webapp/node_modules/readdirp/node_modules/minimatch/node_modules/sigmund',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/traverse-directory',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/traverse-directory/node_modules/graceful-fs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/ncp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/mkdirp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-profile-builder/node_modules/mozilla-profile-builder/node_modules/fs-extra/node_modules/jsonfile',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist/node_modules/wordwrap',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/optimist/node_modules/minimist',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/colors',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/node-static/node_modules/mime',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/shelljs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/underscore',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli/node_modules/glob',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/minimatch/node_modules/sigmund',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/inherits',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domhandler',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domelementtype',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/domutils',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/jshint/node_modules/console-browserify',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/async',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/coffee-script',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/colors',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/dateformat',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/eventemitter2',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/findup-sync',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/minimatch/node_modules/sigmund',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob/node_modules/graceful-fs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/glob/node_modules/inherits',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/findup-sync/node_modules/lodash',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/hooker',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/iconv-lite',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/nopt',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/nopt/node_modules/abbrev',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/rimraf',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/rimraf/node_modules/graceful-fs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/lodash',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/underscore.string',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/which',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/js-yaml/node_modules/esprima',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/exit',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt/node_modules/getobject',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/qs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/json-stringify-safe',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/forever-agent',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/node-uuid',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/mime',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tough-cookie',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tough-cookie/node_modules/punycode',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data/node_modules/combined-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/tunnel-agent',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/assert-plus',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/asn1',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/http-signature/node_modules/ctype',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/oauth-sign',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/hoek',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/boom',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/cryptiles',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/hawk/node_modules/sntp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/request/node_modules/aws-sign2',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/debug',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/json-wire-protocol',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/json-wire-protocol/node_modules/eventemitter2',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/socket-retry-connect',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-plugin-forms/node_modules/marionette-client/node_modules/sockit-to-me',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/commander',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/growl',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade/node_modules/commander',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/jade/node_modules/mkdirp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/diff',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/mkdirp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/graceful-fs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha/node_modules/glob/node_modules/inherits',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/commander',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/growl',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/jade',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/jade/node_modules/mkdirp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/diff',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/mkdirp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/ms',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/graceful-fs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-tbpl-reporter/node_modules/mocha/node_modules/glob/node_modules/inherits',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/mkdirp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/mout',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/stream-combiner',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/stream-combiner/node_modules/duplexer',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/inherits',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/block-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/fstream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tar/node_modules/fstream/node_modules/graceful-fs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tempfile',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/decompress/node_modules/tempfile/node_modules/uuid',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/each-async',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/qs',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/json-stringify-safe',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/forever-agent',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/tunnel-agent',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/assert-plus',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/asn1',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/http-signature/node_modules/ctype',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/hoek',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/boom',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/cryptiles',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/hawk/node_modules/sntp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/aws-sign',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/oauth-sign',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/cookie-jar',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/node-uuid',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/mime',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data/node_modules/combined-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/readable-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/readable-stream/node_modules/string_decoder',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/is-object',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/foreach',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/indexof',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/download/node_modules/through2/node_modules/xtend/node_modules/object-keys/node_modules/is',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/through',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/duplexer',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/from',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/map-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/pause-stream',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/split',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/event-stream/node_modules/stream-combiner',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/mozilla-get-url/node_modules/jsftp/node_modules/parse-listing',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/commander',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/dmg',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/tmp',
+742 silly rebuild set   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mozilla-download/node_modules/ncp' ]
+743 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/chai
+744 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/chai/package.json
+745 info preinstall chai@1.4.2
+746 verbose linkStuff [ false,
+746 verbose linkStuff   false,
+746 verbose linkStuff   false,
+746 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+747 info linkStuff chai@1.4.2
+748 verbose linkBins chai@1.4.2
+749 verbose linkMans chai@1.4.2
+750 verbose rebuildBundles chai@1.4.2
+751 info install chai@1.4.2
+752 info postinstall chai@1.4.2
+753 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-settings-api
+754 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-settings-api/package.json
+755 info preinstall marionette-settings-api@0.1.0
+756 verbose linkStuff [ false,
+756 verbose linkStuff   false,
+756 verbose linkStuff   false,
+756 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+757 info linkStuff marionette-settings-api@0.1.0
+758 verbose linkBins marionette-settings-api@0.1.0
+759 verbose linkMans marionette-settings-api@0.1.0
+760 verbose rebuildBundles marionette-settings-api@0.1.0
+761 info install marionette-settings-api@0.1.0
+762 info postinstall marionette-settings-api@0.1.0
+763 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-contrib-clean
+764 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-contrib-clean/package.json
+765 info preinstall grunt-contrib-clean@0.5.0
+766 verbose linkStuff [ false,
+766 verbose linkStuff   false,
+766 verbose linkStuff   false,
+766 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+767 info linkStuff grunt-contrib-clean@0.5.0
+768 verbose linkBins grunt-contrib-clean@0.5.0
+769 verbose linkMans grunt-contrib-clean@0.5.0
+770 verbose rebuildBundles grunt-contrib-clean@0.5.0
+771 info install grunt-contrib-clean@0.5.0
+772 info postinstall grunt-contrib-clean@0.5.0
+773 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/rimraf
+774 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/rimraf/package.json
+775 info preinstall rimraf@2.2.5
+776 verbose linkStuff [ false,
+776 verbose linkStuff   false,
+776 verbose linkStuff   false,
+776 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+777 info linkStuff rimraf@2.2.5
+778 verbose linkBins rimraf@2.2.5
+779 verbose link bins [ { rimraf: './bin.js' },
+779 verbose link bins   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/.bin',
+779 verbose link bins   false ]
+780 verbose linkMans rimraf@2.2.5
+781 verbose rebuildBundles rimraf@2.2.5
+782 info install rimraf@2.2.5
+783 info postinstall rimraf@2.2.5
+784 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/watch
+785 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/watch/package.json
+786 info preinstall watch@0.9.0
+787 verbose linkStuff [ false,
+787 verbose linkStuff   false,
+787 verbose linkStuff   false,
+787 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+788 info linkStuff watch@0.9.0
+789 verbose linkBins watch@0.9.0
+790 verbose linkMans watch@0.9.0
+791 verbose rebuildBundles watch@0.9.0
+792 info install watch@0.9.0
+793 info postinstall watch@0.9.0
+794 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-helper
+795 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-helper/package.json
+796 info preinstall marionette-helper@0.2.1
+797 verbose linkStuff [ false,
+797 verbose linkStuff   false,
+797 verbose linkStuff   false,
+797 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+798 info linkStuff marionette-helper@0.2.1
+799 verbose linkBins marionette-helper@0.2.1
+800 verbose linkMans marionette-helper@0.2.1
+801 verbose rebuildBundles marionette-helper@0.2.1
+802 info install marionette-helper@0.2.1
+803 info postinstall marionette-helper@0.2.1
+804 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-apps
+805 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-apps/package.json
+806 info preinstall marionette-apps@0.3.3
+807 verbose linkStuff [ false,
+807 verbose linkStuff   false,
+807 verbose linkStuff   false,
+807 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+808 info linkStuff marionette-apps@0.3.3
+809 verbose linkBins marionette-apps@0.3.3
+810 verbose linkMans marionette-apps@0.3.3
+811 verbose rebuildBundles marionette-apps@0.3.3
+812 info install marionette-apps@0.3.3
+813 info postinstall marionette-apps@0.3.3
+814 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ejs
+815 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ejs/package.json
+816 info preinstall ejs@0.8.4
+817 verbose linkStuff [ false,
+817 verbose linkStuff   false,
+817 verbose linkStuff   false,
+817 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+818 info linkStuff ejs@0.8.4
+819 verbose linkBins ejs@0.8.4
+820 verbose linkMans ejs@0.8.4
+821 verbose rebuildBundles ejs@0.8.4
+822 info install ejs@0.8.4
+823 info postinstall ejs@0.8.4
+824 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/adm-zip
+825 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/adm-zip/package.json
+826 info preinstall adm-zip@0.4.3
+827 verbose linkStuff [ false,
+827 verbose linkStuff   false,
+827 verbose linkStuff   false,
+827 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+828 info linkStuff adm-zip@0.4.3
+829 verbose linkBins adm-zip@0.4.3
+830 verbose linkMans adm-zip@0.4.3
+831 verbose rebuildBundles adm-zip@0.4.3
+832 info install adm-zip@0.4.3
+833 info postinstall adm-zip@0.4.3
+834 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/empty-port
+835 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/empty-port/package.json
+836 info preinstall empty-port@0.0.1
+837 verbose linkStuff [ false,
+837 verbose linkStuff   false,
+837 verbose linkStuff   false,
+837 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+838 info linkStuff empty-port@0.0.1
+839 verbose linkBins empty-port@0.0.1
+840 verbose linkMans empty-port@0.0.1
+841 verbose rebuildBundles empty-port@0.0.1
+842 info install empty-port@0.0.1
+843 info postinstall empty-port@0.0.1
+844 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/fe.js
+845 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/fe.js/package.json
+846 info preinstall fe.js@0.1.4
+847 verbose linkStuff [ false,
+847 verbose linkStuff   false,
+847 verbose linkStuff   false,
+847 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+848 info linkStuff fe.js@0.1.4
+849 verbose linkBins fe.js@0.1.4
+850 verbose linkMans fe.js@0.1.4
+851 verbose rebuildBundles fe.js@0.1.4
+852 info install fe.js@0.1.4
+853 info postinstall fe.js@0.1.4
+854 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dateformat
+855 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dateformat/package.json
+856 info preinstall dateformat@1.0.6-1.2.3
+857 verbose linkStuff [ false,
+857 verbose linkStuff   false,
+857 verbose linkStuff   false,
+857 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+858 info linkStuff dateformat@1.0.6-1.2.3
+859 verbose linkBins dateformat@1.0.6-1.2.3
+860 verbose linkMans dateformat@1.0.6-1.2.3
+861 verbose rebuildBundles dateformat@1.0.6-1.2.3
+862 info install dateformat@1.0.6-1.2.3
+863 info postinstall dateformat@1.0.6-1.2.3
+864 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-content-script
+865 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-content-script/package.json
+866 info preinstall marionette-content-script@0.0.3
+867 verbose linkStuff [ false,
+867 verbose linkStuff   false,
+867 verbose linkStuff   false,
+867 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+868 info linkStuff marionette-content-script@0.0.3
+869 verbose linkBins marionette-content-script@0.0.3
+870 verbose linkMans marionette-content-script@0.0.3
+871 verbose rebuildBundles marionette-content-script@0.0.3
+872 info install marionette-content-script@0.0.3
+873 info postinstall marionette-content-script@0.0.3
+874 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/async
+875 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/async/package.json
+876 info preinstall async@0.2.9
+877 verbose linkStuff [ false,
+877 verbose linkStuff   false,
+877 verbose linkStuff   false,
+877 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+878 info linkStuff async@0.2.9
+879 verbose linkBins async@0.2.9
+880 verbose linkMans async@0.2.9
+881 verbose rebuildBundles async@0.2.9
+882 info install async@0.2.9
+883 info postinstall async@0.2.9
+884 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/debug
+885 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/debug/package.json
+886 info preinstall debug@0.7.4
+887 verbose linkStuff [ false,
+887 verbose linkStuff   false,
+887 verbose linkStuff   false,
+887 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+888 info linkStuff debug@0.7.4
+889 verbose linkBins debug@0.7.4
+890 verbose linkMans debug@0.7.4
+891 verbose rebuildBundles debug@0.7.4
+892 info install debug@0.7.4
+893 info postinstall debug@0.7.4
+894 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-jsdoc
+895 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/grunt-jsdoc/package.json
+896 info preinstall grunt-jsdoc@0.5.1
+897 verbose linkStuff [ false,
+897 verbose linkStuff   false,
+897 verbose linkStuff   false,
+897 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+898 info linkStuff grunt-jsdoc@0.5.1
+899 verbose linkBins grunt-jsdoc@0.5.1
+900 verbose link bins [ { 'grunt-jsdoc': 'bin/grunt-jsdoc' },
+900 verbose link bins   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/.bin',
+900 verbose link bins   false ]
+901 verbose linkMans grunt-jsdoc@0.5.1
+902 verbose rebuildBundles grunt-jsdoc@0.5.1
+903 info install grunt-jsdoc@0.5.1
+904 info postinstall grunt-jsdoc@0.5.1
+905 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-file-manager
+906 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-file-manager/package.json
+907 info preinstall marionette-file-manager@0.0.2
+908 verbose linkStuff [ false,
+908 verbose linkStuff   false,
+908 verbose linkStuff   false,
+908 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+909 info linkStuff marionette-file-manager@0.0.2
+910 verbose linkBins marionette-file-manager@0.0.2
+911 verbose linkMans marionette-file-manager@0.0.2
+912 verbose rebuildBundles marionette-file-manager@0.0.2
+913 info install marionette-file-manager@0.0.2
+914 info postinstall marionette-file-manager@0.0.2
+915 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/q
+916 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/q/package.json
+917 info preinstall q@0.9.7
+918 verbose linkStuff [ false,
+918 verbose linkStuff   false,
+918 verbose linkStuff   false,
+918 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+919 info linkStuff q@0.9.7
+920 verbose linkBins q@0.9.7
+921 verbose linkMans q@0.9.7
+922 verbose rebuildBundles q@0.9.7
+923 info install q@0.9.7
+924 info postinstall q@0.9.7
+925 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/moment
+926 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/moment/package.json
+927 info preinstall moment@2.4.0
+928 verbose linkStuff [ false,
+928 verbose linkStuff   false,
+928 verbose linkStuff   false,
+928 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+929 info linkStuff moment@2.4.0
+930 verbose linkBins moment@2.4.0
+931 verbose linkMans moment@2.4.0
+932 verbose rebuildBundles moment@2.4.0
+933 info install moment@2.4.0
+934 info postinstall moment@2.4.0
+935 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-json-proxy
+936 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/mocha-json-proxy/package.json
+937 info preinstall mocha-json-proxy@0.0.7
+938 verbose linkStuff [ false,
+938 verbose linkStuff   false,
+938 verbose linkStuff   false,
+938 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+939 info linkStuff mocha-json-proxy@0.0.7
+940 verbose linkBins mocha-json-proxy@0.0.7
+941 verbose linkMans mocha-json-proxy@0.0.7
+942 verbose rebuildBundles mocha-json-proxy@0.0.7
+943 info install mocha-json-proxy@0.0.7
+944 info postinstall mocha-json-proxy@0.0.7
+945 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-device-host
+946 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/marionette-device-host/package.json
+947 info preinstall marionette-device-host@0.0.2
+948 verbose linkStuff [ false,
+948 verbose linkStuff   false,
+948 verbose linkStuff   false,
+948 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+949 info linkStuff marionette-device-host@0.0.2
+950 verbose linkBins marionette-device-host@0.0.2
+951 verbose linkMans marionette-device-host@0.0.2
+952 verbose rebuildBundles marionette-device-host@0.0.2
+953 info install marionette-device-host@0.0.2
+954 info postinstall marionette-device-host@0.0.2
+955 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/proxyquire
+956 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/proxyquire/package.json
+957 info preinstall proxyquire@0.4.1
+958 verbose linkStuff [ false,
+958 verbose linkStuff   false,
+958 verbose linkStuff   false,
+958 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+959 info linkStuff proxyquire@0.4.1
+960 verbose linkBins proxyquire@0.4.1
+961 verbose linkMans proxyquire@0.4.1
+962 verbose rebuildBundles proxyquire@0.4.1
+963 info install proxyquire@0.4.1
+964 info postinstall proxyquire@0.4.1
+965 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive
+966 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/package.json
+967 info preinstall dive@0.3.0
+968 verbose linkStuff [ false,
+968 verbose linkStuff   false,
+968 verbose linkStuff   false,
+968 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+969 info linkStuff dive@0.3.0
+970 verbose linkBins dive@0.3.0
+971 verbose linkMans dive@0.3.0
+972 verbose rebuildBundles dive@0.3.0
+973 verbose rebuildBundles [ 'append' ]
+974 info install dive@0.3.0
+975 info postinstall dive@0.3.0
+976 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/node_modules/append
+977 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/node_modules/append/package.json
+978 info preinstall append@0.1.1
+979 verbose linkStuff [ false,
+979 verbose linkStuff   false,
+979 verbose linkStuff   false,
+979 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/dive/node_modules' ]
+980 info linkStuff append@0.1.1
+981 verbose linkBins append@0.1.1
+982 verbose linkMans append@0.1.1
+983 verbose rebuildBundles append@0.1.1
+984 info install append@0.1.1
+985 info postinstall append@0.1.1
+986 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs
+987 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/package.json
+988 info preinstall travis-project-jobs@0.0.1
+989 verbose linkStuff [ false,
+989 verbose linkStuff   false,
+989 verbose linkStuff   false,
+989 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+990 info linkStuff travis-project-jobs@0.0.1
+991 verbose linkBins travis-project-jobs@0.0.1
+992 verbose link bins [ { travisaction: './bin/travisaction' },
+992 verbose link bins   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/.bin',
+992 verbose link bins   false ]
+993 verbose linkMans travis-project-jobs@0.0.1
+994 verbose rebuildBundles travis-project-jobs@0.0.1
+995 verbose rebuildBundles [ 'commander' ]
+996 info install travis-project-jobs@0.0.1
+997 info postinstall travis-project-jobs@0.0.1
+998 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/node_modules/commander
+999 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/node_modules/commander/package.json
+1000 info preinstall commander@2.0.0
+1001 verbose linkStuff [ false,
+1001 verbose linkStuff   false,
+1001 verbose linkStuff   false,
+1001 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/travis-project-jobs/node_modules' ]
+1002 info linkStuff commander@2.0.0
+1003 verbose linkBins commander@2.0.0
+1004 verbose linkMans commander@2.0.0
+1005 verbose rebuildBundles commander@2.0.0
+1006 info install commander@2.0.0
+1007 info postinstall commander@2.0.0
+1008 info build /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt
+1009 verbose from cache /home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt/package.json
+1010 info preinstall ffi-prebuilt@1.2.9
+1011 verbose linkStuff [ false,
+1011 verbose linkStuff   false,
+1011 verbose linkStuff   false,
+1011 verbose linkStuff   '/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules' ]
+1012 info linkStuff ffi-prebuilt@1.2.9
+1013 verbose linkBins ffi-prebuilt@1.2.9
+1014 verbose linkMans ffi-prebuilt@1.2.9
+1015 verbose rebuildBundles ffi-prebuilt@1.2.9
+1016 verbose rebuildBundles [ 'ref-prebuilt', 'ref-struct-prebuilt', 'bindings' ]
+1017 info install ffi-prebuilt@1.2.9
+1018 verbose unsafe-perm in lifecycle true
+1019 silly exec sh "-c" "./tools/copy.js || node-gyp configure build"
+1020 silly sh,-c,./tools/copy.js || node-gyp configure build,/home/jyothi.prasad/mozGaia/devGit/gaia/node_modules/ffi-prebuilt spawning
+1021 info ffi-prebuilt@1.2.9 Failed to exec install script
+1022 error ffi-prebuilt@1.2.9 install: `./tools/copy.js || node-gyp configure build`
+1022 error `sh "-c" "./tools/copy.js || node-gyp configure build"` failed with 1
+1023 error Failed at the ffi-prebuilt@1.2.9 install script.
+1023 error This is most likely a problem with the ffi-prebuilt package,
+1023 error not with npm itself.
+1023 error Tell the author that this fails on your system:
+1023 error     ./tools/copy.js || node-gyp configure build
+1023 error You can get their info via:
+1023 error     npm owner ls ffi-prebuilt
+1023 error There is likely additional logging output above.
+1024 error System Linux 2.6.32-31-server
+1025 error command "/usr/local/bin/node" "/usr/local/bin/npm" "rebuild"
+1026 error cwd /home/jyothi.prasad/mozGaia/devGit/gaia
+1027 error node -v v0.8.16
+1028 error npm -v 1.1.69
+1029 error code ELIFECYCLE
+1030 verbose exit [ 1, true ]

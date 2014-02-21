@@ -22,4 +22,10 @@
 @import url("settings.css");
 @import url("setting.css");
 @import url("setting-options.css");
+@import url("recording-timer.css");
 @import url("VideoPlayer.css");
+@import url("zoom.css");
+@import url("dual-shutter.css");
+@import url("toastmessage.css");
+@import url("indicator.css");
+@import url("selftimer.css");

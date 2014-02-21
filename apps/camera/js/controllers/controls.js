@@ -59,6 +59,13 @@ ControlsController.prototype.configure = function() {
   this.controls.set('cancel', isCancellable);
   this.controls.set('switchable', isSwitchable);
   this.controls.set('mode', initialMode);
+
+  // To-Do: [hyuna] check when init controls or prior 
+  var enableDualShutter = this.app.settings.value('dualShutter');
+  if(enableDualShutter) {
+    this.controls.set('dual-enabled', enableDualShutter);
+    this.disableButtons();
+  }
 };
 
 ControlsController.prototype.disableButtons = function() {

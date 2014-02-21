@@ -3,6 +3,7 @@ define(function(require, exports, module) {
 
 module.exports = {
   showSettings: true,
+  dualShutter: true,
   mode: {
     title: 'Mode',
     options: [

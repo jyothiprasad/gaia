@@ -7,8 +7,11 @@ define(function(require, exports, module) {
 
 var performanceTesting = require('performanceTesting');
 var ViewfinderView = require('views/viewfinder');
+var RecordingTimerView = require('views/recording-timer');
 var ControlsView = require('views/controls');
+var DualShutterView = require('views/dual-shutter');
 var FocusRing = require('views/focus-ring');
+var indicatorView = require('views/indicator');
 var lockscreen = require('lib/lock-screen');
 var constants = require('config/camera');
 var broadcast = require('lib/broadcast');
@@ -17,6 +20,7 @@ var model = require('vendor/model');
 var debug = require('debug')('app');
 var LazyL10n = require('LazyL10n');
 var HudView = require('views/hud');
+var ZoomView = require('views/zoom');
 var bind = require('lib/bind');
 var dcf = require('lib/dcf');
 
@@ -74,6 +78,7 @@ function App(options) {
 App.prototype.boot = function() {
   this.setInitialMode();
   this.initializeViews();
+  this.checkBatteryStatus();
   this.runControllers();
   this.injectViews();
   this.bindEvents();
@@ -104,27 +109,38 @@ App.prototype.runControllers = function() {
   this.controllers.activity(this);
   this.controllers.camera(this);
   this.controllers.viewfinder(this);
+  this.controllers.recordingTimer(this);
   this.controllers.controls(this);
+  this.controllers.dualShutter(this);
   this.controllers.confirm(this);
   this.controllers.overlay(this);
   this.controllers.sounds(this);
   this.controllers.hud(this);
+  this.controllers.indicator(this);
   debug('controllers run');
 };
 
 App.prototype.initializeViews = function() {
   this.views.viewfinder = new ViewfinderView();
+  this.views.recordingTimer = new RecordingTimerView();
   this.views.controls = new ControlsView();
+  this.views.dualShutter = new DualShutterView();
   this.views.focusRing = new FocusRing();
   this.views.hud = new HudView();
+  this.views.zoom = new ZoomView();
+  this.views.indicator = new indicatorView();
   debug('views initialized');
 };
 
 App.prototype.injectViews = function() {
   this.views.hud.appendTo(this.el);
   this.views.controls.appendTo(this.el);
+  this.views.dualShutter.appendTo(this.el);
   this.views.viewfinder.appendTo(this.el);
+  this.views.recordingTimer.appendTo(this.el);
   this.views.focusRing.appendTo(this.el);
+  this.views.zoom.appendTo(this.el);
+  this.views.indicator.appendTo(this.el);
   debug('views injected');
 };
 
@@ -197,6 +213,16 @@ App.prototype.geolocationWatch = function() {
     this.geolocation.watch();
     debug('geolocation watched');
   }
+};
+
+/**
+*
+* before loading camera object 
+* check the battery status if it
+* is less than 5% than don't launch the camera application 
+**/
+App.prototype.checkBatteryStatus = function(){
+  this.controllers.lowbattery(this);
 };
 
 /**

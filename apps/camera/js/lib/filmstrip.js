@@ -130,6 +130,9 @@ define(function(require, exports, module) {
      * And it is also shown for 5 seconds after leaving preview mode.
      */
     function show(time) {
+      // temporary block
+      return;
+
       document.body.classList.remove('filmstriphidden');
 
       if (hideTimer) {
@@ -236,6 +239,9 @@ define(function(require, exports, module) {
 
       if (items.length > 0) {
         items[currentItemIndex].element.classList.remove('previewed');
+      }
+      else if(items.length ===0) {
+        broadcast.emit('disableThumbnail');
       }
 
       currentItemIndex = null;
@@ -393,6 +399,11 @@ define(function(require, exports, module) {
       item.element.src = URL.createObjectURL(item.thumbnail);
       item.element.classList.add('thumbnail');
       filmstrip.insertBefore(item.element, filmstrip.firstElementChild);
+
+      var thumbnailButton = document.getElementById('thumbnail-button');
+      thumbnailButton.src = URL.createObjectURL(item.thumbnail);
+      thumbnailButton.classList.add('thumbnail-btn');
+      thumbnailButton.dataset.index = 0;
 
       // If we have too many thumbnails now, remove the oldest one from
       // the array, and remove its element from the filmstrip and release
@@ -632,7 +643,8 @@ define(function(require, exports, module) {
       hidePreview: hidePreview,
       isPreviewShown: isPreviewShown,
       addImageAndShow: addImageAndShow,
-      addVideoAndShow: addVideoAndShow
+      addVideoAndShow: addVideoAndShow,
+      previewItem: previewItem
     };
 
     // camera.js needs this to be global

@@ -10,3 +10,50 @@
 .viewfinder.fade-out {
   opacity: 0;
 }
+.frameGrid{
+	position: absolute;
+	z-index: 10;
+	left: 0;
+  	top: 0;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	pointer-events:none;
+	text-align: center;
+	transition: opacity 1s ease-in-out;
+}
+.frameGrid table{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-spacing:0;
+	border-collapse:collapse;
+}
+.frameGrid tr{
+	margin: 0;
+	padding: 0;
+}
+.frameGrid td{
+	margin: 0;
+	padding: 0;
+	width: 30%;
+	height: 30%;
+	border: solid 0.2rem  #7D7D7D;
+	/*border-right:0.2rem solid  #7D7D7D;
+	background: transparent;
+	pointer-events:none;*/
+}
+table tr:first-child td{
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child {
+  border-left: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}

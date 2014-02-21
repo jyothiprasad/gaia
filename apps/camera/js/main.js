@@ -23,16 +23,21 @@ require(['config/require', 'config'], function() {
     var Activity = require('lib/activity');
     var allDone = require('lib/all-done');
     var Storage = require('lib/storage');
+    var ZoomView = require('views/zoom');
     var controllers = {
       hud: require('controllers/hud'),
       controls: require('controllers/controls'),
+      dualShutter: require('controllers/dual-shutter'),
       viewfinder: require('controllers/viewfinder'),
+      recordingTimer: require('controllers/recording-timer'),
       overlay: require('controllers/overlay'),
       confirm: require('controllers/confirm'),
       settings: require('controllers/settings'),
       activity: require('controllers/activity'),
       camera: require('controllers/camera'),
-      sounds: require('controllers/sounds')
+      indicator:require('controllers/indicator'),
+      sounds: require('controllers/sounds'),
+      lowbattery:require('controllers/lowbattery')
     };
 
     debug('required dependencies');
