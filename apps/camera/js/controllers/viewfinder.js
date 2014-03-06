@@ -33,6 +33,7 @@ function ViewfinderController(app) {
 
 ViewfinderController.prototype.bindEvents = function() {
   this.viewfinder.on('click', this.onViewfinderClick);
+  this.viewfinder.on('startcontinuousfocus', this.startContinuousFocus);
   this.app.on('camera:configured', this.loadStream);
   this.app.on('settings:configured', this.configureCamera);
 };
@@ -50,6 +51,10 @@ ViewfinderController.prototype.loadStream = function() {
   this.viewfinder.updatePreview(this.camera.previewSize, isFrontCamera);
   this.camera.loadStreamInto(this.viewfinder.el);
   this.viewfinder.fadeIn();
+};
+
+ViewfinderController.prototype.startContinuousFocus = function() {
+  this.camera.setContinuousAutoFocus();
 };
 
 /**

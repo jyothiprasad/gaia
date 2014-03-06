@@ -687,4 +687,32 @@ Camera.prototype.updateVideoElapsed = function() {
   this.set('videoElapsed', (now - start));
 };
 
+/**
+ * Set focus mode to continuous Auto
+ * and when ever there are changes in
+ * sensors, it refocus on new scene.
+ *
+ * There are two types of C-AF.
+ * continuous-picture: camera mode.
+ * continuous-video: video mode.
+ *
+ */
+Camera.prototype.setContinuousAutoFocus = function() {
+  var self = this;
+
+  switch (this.mode) {
+    case 'picture':
+      this.mozCamera.focusMode = "continuous-picture";
+    break;
+    case 'video':
+      this.mozCamera.focusMode = "continuous-video";
+    break;
+  }
+  this.mozCamera.onAutoFocusMove = onAutoFocusMove;
+  function onAutoFocusMove(success) {
+    var bool = success;
+    console.log("AutoFocusMove Value  = "+ bool);
+  }
+};
+
 });

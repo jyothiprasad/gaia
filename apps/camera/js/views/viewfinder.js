@@ -71,6 +71,8 @@ return View.extend({
       lastTouchA = evt.touches[0];
       lastTouchB = evt.touches[1];
       isScaling = true;
+    } else if (touchCount === 1) {
+      this.emit('startcontinuousfocus');
     }
   },
 
